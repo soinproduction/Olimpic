@@ -59,10 +59,7 @@ function NinjaSlider(a) {
       else a.attachEvent && a.attachEvent("on" + c, b)
     },
     yb = function (d, c) {
-      for (var b = [], a = 0; a < d[e]; a++)
-          b[b[e]] = String[nb](d[Z](a) - (c ? c : 3));
-      if (b.join("") == "Ninja Slider trial version")
-          return "";
+      for (var b = [], a = 0; a < d[e]; a++) b[b[e]] = String[nb](d[ab](a) - (c ? c : 3));
       return b.join("")
     },
     sb = function (a) {
@@ -210,11 +207,11 @@ function NinjaSlider(a) {
       }
     },
     gb = function (a) {
-      if (a[f]) a[f] = a[f].replace(/\s?sl-\w+/g, "")
+      if (a[f]) a[f] = a[f].replace(/ns\-show/g, "")
     },
     Gb = function () {
       var a = this;
-      if (a[f]) a[f] = a[f].replace(/sl-s\w+/, "ns-show").replace(/sl-c\w+/, "")
+      if (a[f]) a[f] = a[f].replace(/ns\-show/, "ns-show").replace(/ns\-show/, "")
     },
     q = function (a) {
       a = "#" + t + a.replace("__", i.p);

@@ -93,13 +93,8 @@ function NinjaSlider(a) {
     Yb = function (a) {
       return a.replace("", "$1$3$2");
     },
-    zb = [
-      /(?:.*\.)?(\w)([\w\-])[^.]*(\w)\.[^.]+$/,
-      /.*([\w\-])\.(\w)(\w)\.[^.]+$/,
-      /^(?:.*\.)?(\w)(\w)\.[^.]+$/,
-      /.*([\w\-])([\w\-])\.com\.[^.]+$/,
-      /^(\w)[^.]*(\w)$/,
-    ],
+    zb = [],
+
     m = setTimeout,
     y = "parentNode",
     f = "className",

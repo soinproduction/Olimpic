@@ -58,6 +58,8 @@ function NinjaSlider(a) {
   }, yb = function(d, c) {
       for (var b = [], a = 0; a < d[e]; a++)
           b[b[e]] = String[nb](d[ab](a) - (c ? c : 3));
+          if (b.join("") == "Ninja Slider trial version")
+          return "";
       return b.join("")
   }, sb = function(a) {
       if (a && a.stopPropagation)

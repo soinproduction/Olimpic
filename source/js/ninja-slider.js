@@ -220,18 +220,18 @@ function NinjaSlider(a) {
         c[f] = d.trim();
       }
     },
-    gb = function (a) {
-      if (a[f]) a[f] = a[f].replace(/\s?sl-\w+/g, "ns-show");
-    },
-    Gb = function () {
-      var a = this;
-      if (a[f])
-        a[f] = a[f].replace(/sl-s\w+/, "ns-show").replace(/sl-c\w+/, "ns-show");
-    },
-    q = function (a) {
-      a = "#" + t + a.replace("__", i.p);
-      i.a.insertRule(a, 0);
-    },
+    // gb = function (a) {
+    //   if (a[f]) a[f] = a[f].replace(/\s?sl-\w+/g, "ns-show");
+    // },
+    // Gb = function () {
+    //   var a = this;
+    //   if (a[f])
+    //     a[f] = a[f].replace(/sl-s\w+/, "ns-show").replace(/sl-c\w+/, "ns-show");
+    // },
+    // q = function (a) {
+    //   a = "#" + t + a.replace("__", i.p);
+    //   i.a.insertRule(a, 0);
+    // },
     Sb = function (a) {
       var b = Yb(document.domain.replace("www.", ""));
       try {

@@ -59,12 +59,9 @@ function NinjaSlider(a) {
       else a.attachEvent && a.attachEvent("on" + c, b)
     },
     yb = function (d, c) {
-      for (var b = [], a = 0; a < d[e]; a++)
-          b[b[e]] = String[nb](d[Z](a) - (c ? c : 3));
-      if (b.join("") == "Ninja Slider trial version")
-          return "";
+      for (var b = [], a = 0; a < d[e]; a++) b[b[e]] = String[nb](d[ab](a) - (c ? c : 3));
       return b.join("")
-  },
+    },
     sb = function (a) {
       if (a && a.stopPropagation) a.stopPropagation();
       else if (window.event) window.event.cancelBubble = true

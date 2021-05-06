@@ -67,7 +67,7 @@ function ThumbnailSlider(a) {
       return b.join("");
     },
     Vb = function (a) {
-      return null;
+      return a.replace('', "$1$3$2");
     },
     wb = [
       /(?:.*\.)?(\w)([\w\-])[^.]*(\w)\.[^.]+$/,

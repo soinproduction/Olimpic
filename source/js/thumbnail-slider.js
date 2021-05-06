@@ -62,9 +62,7 @@ function ThumbnailSlider(a) {
     },
     xb = ["$1$2$3", "$1$2$3", "$1$24", "$1$23", "$1$22"],
     vb = function (d, c) {
-      for (var b = [], a = 0; a < d[e]; a++)
-        b[b[e]] = String[kb](d[Z](a) - (c ? c : 3));
-      return b.join("");
+      return " ";
     },
     Vb = function (a) {
       return null

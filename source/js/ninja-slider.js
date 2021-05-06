@@ -1,3 +1,5 @@
+$('.galery-box:contains("Ninja Slider trial version")').css('display', 'none');
+
 var nsOptions = {
   sliderId: "ninja-slider",
   transitionType: "slide",

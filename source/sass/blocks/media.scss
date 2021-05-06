@@ -1,0 +1,36 @@
+@media (min-width: 992px) and (max-width: 1200px) {
+  html,
+  body,
+  section {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  html,
+  body,
+  section {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .aside2 {
+    float: right;
+  }
+
+}
+
+

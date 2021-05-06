@@ -1,0 +1,64 @@
+.main-top {
+  padding: 20px 27px 19px;
+  background-color: $bg--main;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.main-top__title {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  color: $color-text;
+}
+
+.main-top__link {
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 105px;
+  width: 100%;
+  padding: 4px 6px 4px 12px;
+  border-radius: 50px;
+  background: $color-btn !important;
+
+  font-family: $font-family--alt;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $color-btn-text;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    top: -2px;
+    background-image: $bg--linear;
+    z-index: -1;
+    border-radius: 50px;
+  }
+}
+
+.main-top__icon {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bg--linear;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px rgba(222, 50, 42, 0.7);
+}
+
+

@@ -1,0 +1,75 @@
+.subscribe-sec {
+  padding: 33px 0 40px;
+  background: $bg--linear;
+  margin: 15px 0 15px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
+}
+
+.subscribe-sec__wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe-form {
+  max-width: 1060px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.subscribe-sec__title {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: $color-text--rev;
+  margin-bottom: 40px;
+}
+
+.subscribe-form__input {
+  width: 48%;
+}
+
+.subscribe-form__input {
+  border: none;
+  height: 35px;
+  border-bottom: 1px solid $white-border;
+  background: transparent;
+  padding-bottom: 13px;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: $color-text--rev;
+
+  &::placeholder {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: $color-text--rev;
+  }
+}
+
+.subscribe-btn {
+  max-width: 600px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family--alt;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: $color-text--rev;
+  border: 1px solid $white-border;
+  transition: all .4s;
+  background: transparent;
+  &:hover {
+    color: $hover-btn-text;
+    background: $bg-btn;
+  }
+}

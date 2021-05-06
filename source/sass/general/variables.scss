@@ -1,0 +1,58 @@
+/* -- Fonts --*/
+$font-family: "exo2", sans-serif;
+$font-family--alt: "Century-Gothic", sans-serif;
+/* -- Colors --*/
+/* -- Headers --*/
+$color-header: #111111;
+$color-header--alt: #222222;
+$color-header--rev: #ffffff;
+
+/* -- Text --*/
+$color-text: #000;
+$color-text--rev: #ffffff;
+$color-text--blue:  #01499B;
+
+/* -- Menu --*/
+$color-menu: #111111;
+$color-menu--hover: rgba(17, 17, 17, 0.6);
+$color-menu--active: rgba(17, 17, 17, 0.3);
+$color-menu-alt: #ffffff;
+$color-menu-alt--hover: rgba(255, 255, 255, 0.6);
+$color-menu-alt--active: rgba(255, 255, 255, 0.3);
+
+/* -- Backgrounds --*/
+$bg--linear: linear-gradient(90deg, #b4404d 0%, #19488e 100%);
+$bg--main: #fff;
+$bg--footer: #344050;
+$bg--hover-item: #024A9B;
+
+/* -- Buttons --*/
+$color-btn:#fff;
+$color-btn-text: #231F20;
+
+/* -- Buttons-hover-text --*/
+
+$hover-btn-text: #01499B;
+
+/* -- Buttons-hover-bg --*/
+
+$bg-btn:#fff;
+
+
+/* -- Form --*/
+$color-label: #222222;
+$color-placeholder: #444444;
+
+/* -- Borders --*/
+$color-border: #d9d9d9;
+$white-border: #ffffff;
+
+/*Widths*/
+$desktop-width: 1300px;
+$tablet-width: 768px;
+$mobile-width: 320px;
+/*Paddings*/
+$desktop-padding: 40px;
+$tablet-padding: 30px;
+$mobile-padding: 20px;
+$retina-dppx: 1.5dppx;

@@ -1,0 +1,70 @@
+.kinds-sec {
+  background: $bg--main;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.35);
+}
+
+.kinds-box__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  svg {
+    transition: all .5s;
+    margin-bottom: 7px;
+  }
+  &:hover svg {
+    transform: scale(1.1);
+  }
+}
+
+.kinds-box__name {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: $color-text;
+}
+
+.kinds-box {
+  display: flex;
+  height: 950px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.kinds-box__item {
+  width: fit-content;
+}
+
+.kinds-box {
+  padding: 22px 23px 0;
+  margin-right: 45px;
+  margin-top: 22px;
+}
+
+.kinds-box__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 32px 90px;
+  padding-right: 90px;
+}
+
+.kinds-box::-webkit-scrollbar{
+  width: 5px;
+}
+
+
+.kinds-box::-webkit-scrollbar-thumb {
+  width: 6px;
+  background: #27aae1;
+  height: 20%;
+  border-top: 70px solid transparent;
+}
+
+.kinds-box::-webkit-scrollbar-track {
+  box-sizing: content-box;
+
+  background: #d0d0d0;
+  border: 2px solid #ffffff;
+  border-top: 70px solid #fff;
+}
+

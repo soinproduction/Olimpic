@@ -475,6 +475,20 @@ $('body').on('click', '.password-control2', function () {
 }();
 
 
+const slider = document.getElementById('playBody');
+const prevSlider = document.getElementById('prev');
+const nextSlider = document.getElementById('next');
+
+
+nextSlider.addEventListener('click', (e) => {
+    slider.scrollBy(315, 0);
+});
+
+prevSlider.addEventListener('click', (e) => {
+    slider.scrollBy(-315, 0);
+});
+
+
 
 
 

@@ -14,7 +14,7 @@ footer {
 .footer-left,
 .footer-right {
   display: flex;
-  max-width: 267px;
+  max-width: 280px;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
@@ -22,6 +22,7 @@ footer {
 
 .footer-top__link {
   max-width: 123px;
+  width: 100%;
   max-height: 123px;
   display: flex;
   align-items: center;

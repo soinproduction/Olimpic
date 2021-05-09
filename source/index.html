@@ -16,6 +16,7 @@
   <link rel="preload" href="fonts/Exo2.0-Black.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Century-Gothic.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Century-Gothic-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -87,7 +88,7 @@
           <div class="header-bottom__left">
             <ul class="header-bottom__list">
               <li class="header-bottom__item">
-                <a href="#" class="header-bottom__social header-bottom__social--disabled">
+                <a href="#" class="header-bottom__social">
                   <svg width="25" height="25">
                     <use href='img/sprite/sprite.svg#yt'></use>
                   </svg>
@@ -1139,12 +1140,12 @@
               </a>
             </div>
           </div>
-          <button class="play-body__btn" id="prev">
+          <button class="play-box__btn" id="prev">
             <svg width="17" height="17">
               <use href="img/sprite/sprite.svg#prev"></use>
             </svg>
          </button>
-          <button class="play-body__btn" id="next">
+          <button class="play-box__btn" id="next">
             <svg width="17" height="17">
               <use href="img/sprite/sprite.svg#next"></use>
             </svg>
@@ -2188,15 +2189,198 @@
             Больше
           </button>
         </div>
-
-
       </section>
-
-
-
     </div>
-
   </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer-top">
+          <div class="footer-top__inner footer-left">
+            <a href="#" class="footer-top__link">
+              <svg  width='110' height='92'>
+                <use href='img/sprite/sprite.svg#footer'></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-top__link">
+              <picture>
+                <source type='image/webp' srcset='img/footer2.webp'>
+                <img width='105' height='105' src='img/footer2.png' alt='logo'>
+              </picture>
+            </a>
+            <a href="#" class="footer-top__link">
+              <svg  width='96' height='104'>
+                <use href='img/sprite/sprite.svg#footer3'></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-top__link">
+              <picture>
+                <source type='image/webp' srcset='img/footer4.webp'>
+                <img width='123' height='123' src='img/footer4.png' alt='logo'>
+              </picture>
+            </a>
+          </div>
+
+          <div class="footer-top__inner footer-center">
+            <nav class="footer-center__nav">
+              <ul class="footer-center__list">
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Новости
+                  </a>
+                </li>
+
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    О комитете
+                  </a>
+                </li>
+
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Лозанна-2020
+                  </a>
+                </li>
+
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Олимпизм
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="footer-center__list">
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Образование
+                  </a>
+                </li>
+
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Олимпийская страна
+                  </a>
+                </li>
+
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Чистый спорт
+                  </a>
+                </li>
+
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Партнеры
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-top__inner footer-right">
+            <a href="#" class="footer-top__link">
+              <svg  width='110' height='92'>
+                <use href='img/sprite/sprite.svg#logo'></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-top__link">
+              <svg  width='92' height='107'>
+                <use href='img/sprite/sprite.svg#footer5'></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-top__link">
+              <svg  width='70' height='96'>
+                <use href='img/sprite/sprite.svg#footer6'></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-top__link">
+              <svg  width='94' height='90'>
+                <use href='img/sprite/sprite.svg#footer7'></use>
+              </svg>
+            </a>
+          </div>
+
+
+
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom__inner">
+            <h5 class="footer-bottom__title">
+              © Олимпийский комитет России, 2002—2019
+            </h5>
+          </div>
+
+          <div class="footer-bottom__inner">
+            <div class="header-bottom footer-bottom__social">
+                <ul class="header-bottom__list">
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#yt'></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#fb'></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#tw'></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#vk'></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#insta'></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#ok'></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#yd'></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/thumbnail-slider.js"></script>
   <script src="js/ninja-slider.js"></script>

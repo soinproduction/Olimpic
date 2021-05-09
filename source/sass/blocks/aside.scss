@@ -128,6 +128,15 @@
   max-height: 674px;
   height: 674px;
   margin-bottom: 0;
+
+  svg {
+    transition: all .3s;
+  }
+
+  svg:hover {
+    transform: scale(1.09);
+  }
+
 }
 
 .fifth-item__inner {

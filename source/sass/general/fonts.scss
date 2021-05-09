@@ -91,3 +91,12 @@
   font-display: swap;
   src: url("../fonts/Century-Gothic-Regular.woff2") format("woff2"), url("../fonts/Century-Gothic-Regular.woff") format("woff"), url("../fonts/Century-Gothic-Regular.otf") format("otf");
 }
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto";
+
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.otf") format("otf");
+}

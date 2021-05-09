@@ -69,8 +69,10 @@ header {
 .header-bottom__social {
   svg {
     fill: #fff;
+    transition: all .3s;
   }
-  &--disabled {
+
+  &:hover {
     svg {
       opacity: .5;
     }

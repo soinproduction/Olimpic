@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="Description" content="default">
-  <title>Home </title>
+  <title>Новости</title>
   <script src="js/picturefill.min.js" async="async"></script>
   <link rel="preload" href="fonts/Exo2.0-ExtraLight.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Exo2.0-Light.woff2" as="font" crossorigin="anonymous">
@@ -178,82 +178,46 @@
       <div class="coll-wrapp">
         <div class="coll-wrapp__aside">
           <aside class="main-aside">
-            <div class="aside-news">
+            <div class="aside-news aside-news--galery">
               <div class="aside-news__top">
                 <h2 class="aside-news__title">
-                  Новости
+                  Фотогалерея
                 </h2>
               </div>
 
-              <nav class="aside-news__nav">
-                <ul class="aside-news__list">
-                  <li class="aside-news__li">
-                    <a href="#" class="aside-news__link aside-news__link--active">
-                      Лента новостей
-                    </a>
-                  </li>
+              <form class="galery-filter">
+                <div class="search-filter">
+                  <input type="text" placeholder="Поиск по словам" class="search-filter__input">
+                  <button class="search-filter__btn">
+                    <svg  width='20' height='20'>
+                      <use href='img/sprite/sprite.svg#filter-search'></use>
+                    </svg>
+                  </button>
+                </div>
 
-                  <li class="aside-news__li">
-                    <a href="#" class="aside-news__link">
-                      От первого лица
-                    </a>
-                  </li>
+                <div class="calendar-filter">
+                  <fieldset class="calendar-filter__fild">
+                    <legend class="calendar-filter__legend">
+                      Показать записи с
+                    </legend>
+                    <input type="text" placeholder="-выбрать дату-" class="calendar-filter__input">
+                  </fieldset>
 
-                  <li class="aside-news__li">
-                    <a href="#" class="aside-news__link">
-                      Новости международного олимпийского движения
-                    </a>
-                  </li>
+                  <fieldset class="calendar-filter__fild">
+                    <legend class="calendar-filter__legend">
+                      По
+                    </legend>
+                    <input type="text" placeholder="-выбрать дату-" class="calendar-filter__input">
+                  </fieldset>
+                </div>
 
-                  <li class="aside-news__li">
-                    <a href="#" class="aside-news__link">
-                      Новости российского олимпийского движения
-                    </a>
-                  </li>
+                <div class="galery-filter__buttons">
+                  <button class="galery-filter__btn galery-filter__btn--confirm">Применить фильтр</button>
+                  <button class="galery-filter__btn">Сбросить фильтр</button>
+                </div>
 
-                  <li class="aside-news__li">
-                    <a href="#" class="aside-news__link">
-                      Мероприятия при поддержке ОКР
-                    </a>
-                  </li>
+              </form>
 
-                  <li class="aside-news__li">
-                    <a href="#" class="aside-news__link">
-                      Поздравления, благодарности и награды
-                    </a>
-                  </li>
-
-                  <li class="aside-news__li">
-                    <a href="#" class="aside-news__link">
-                      ZASPORT
-                    </a>
-                  </li>
-
-                  <li class="aside-news__li">
-                    <a href="#" class="aside-news__link">
-                      Анонсы
-                    </a>
-                  </li>
-
-                  <li class="aside-news__li">
-                    <a href="#" class="aside-news__link">
-                      Знать наших
-                    </a>
-                  </li>
-
-                  <li class="aside-news__li">
-                    <a href="#" class="aside-news__link">
-                      Профилактика распространения COVID-19
-                    </a>
-                  </li>
-
-                  <li class="aside-news__li">
-                    <a href="#" class="aside-news__link">
-                      Фотогалерея
-                    </a>
-                  </li>
-                </ul>
-              </nav>
             </div>
           </aside>
 
@@ -328,243 +292,86 @@
 
         <div class="coll-wrapp__item">
 
-          <section class="news-page">
-              <div class="news-page__box">
-                <a href="img/news/img6.jpg" data-fancybox="gallery" class="tabs-link">
-                  <div class="tab-image">
+          <section class="galery-first">
+            <div class="main-top">
+              <h2 class="main-top__title">
+                Сбор команды по велоспорту на треке в Санкт-Петербурге
+              </h2>
+            </div>
+           <div class="galery-box galery-box--page">
+              <h3 class="galery-box__title">
+                Дата: 2 марта
+                Автор: Илья Зубко
+              </h3>
+              <div class="galery-sliders">
+                <div class="slider-main">
+
+                  <div class="slider-main__slide">
+                    <a href="img/galery-slider/img4.jpg" data-fancybox="galery-slider" class="slider-main__link">
+                      <picture>
+                        <source type='image/webp' srcset='img/galery-slider/img4.webp'>
+                        <img class='galery-main__image' width='877' height='425' src='img/galery-slider/img4.jpg' alt='Слайд'>
+                      </picture>
+                    </a>
+                  </div>
+
+                  <div class="slider-main__slide">
+                    <a href="img/galery-slider/img4.jpg" data-fancybox="galery-slider" class="slider-main__link">
+                      <picture>
+                        <source type='image/webp' srcset='img/galery-slider/img4.webp'>
+                        <img class='galery-main__image' width='877' height='425' src='img/galery-slider/img4.jpg' alt='Слайд'>
+                      </picture>
+                    </a>
+                  </div>
+
+                  <div class="slider-main__slide">
+                    <a href="img/galery-slider/img4.jpg" data-fancybox="galery-slider" class="slider-main__link">
+                      <picture>
+                        <source type='image/webp' srcset='img/galery-slider/img4.webp'>
+                        <img class='galery-main__image' width='877' height='425' src='img/galery-slider/img4.jpg' alt='Слайд'>
+                      </picture>
+                    </a>
+                  </div>
+
+                </div>
+                <div class="galery-nav">
+
+                  <div class="galery-nav__slide">
                     <picture>
-                      <source type="image/webp" srcset="img/news/img6.webp">
-                      <img width="1060" height="596" src="img/news/img6.jpg" alt="фотокарточка" class="tab-image__img">
+                      <source type='image/webp' srcset='img/galery-slider/img5.webp'>
+                      <img class='galery-nav__image' width='170' height='135' src='img/galery-slider/img5.jpg' alt='Слайд'>
                     </picture>
                   </div>
 
-                  <div class="tab-descr">
-                    <div class="tab-descr__top">
-                      <h3 class="tab-descr__title">
-                        Волейбольная арена «Ariake» к Играм-2020 готова
-                      </h3>
-                      <p class="tab-descr__date">
-                        3 Февраля
-                      </p>
-                    </div>
-                    <div class="tab-descr__bottom">
-                      <p class="tab-descr__text">
-                        В столице Олимпийских игр-2020 состоялось торжественное открытие арены «Ariake», где в июле — августе следующего года на протяжении 16 дней за медали будут бороться волейболисты.
-                      </p>
-                    </div>
+                  <div class="galery-nav__slide">
+                    <picture>
+                      <source type='image/webp' srcset='img/galery-slider/img5.webp'>
+                      <img class='galery-nav__image' width='170' height='135' src='img/galery-slider/img5.jpg' alt='Слайд'>
+                    </picture>
                   </div>
-                </a>
+
+                  <div class="galery-nav__slide">
+                    <picture>
+                      <source type='image/webp' srcset='img/galery-slider/img5.webp'>
+                      <img class='galery-nav__image' width='170' height='135' src='img/galery-slider/img5.jpg' alt='Слайд'>
+                    </picture>
+                  </div>
+
+                </div>
               </div>
+           </div>
           </section>
-          <section class="timeline-sec">
-            <div class="timeline-box">
-              <div class="timeline-item">
-                <a href="#" class="timeline-item__link">
-                  <picture>
-                    <source type='image/webp' srcset='img/news/img7.webp'>
-                    <img class='timeline-item__image' width='514' height='269' src='img/news/img7.png' alt='фотокарточка'>
-                  </picture>
-                </a>
-                <div class="timeline-item__info">
-                  <div class="timeline-item__top">
-                    <span class="timeline-item__indicator">
-                      СОБЫТИЕ
-                    </span>
-                    <span class="timeline-item__data">
-                      1 MАРТА 2021
-                    </span>
-                  </div>
-                  <h3 class="timeline-item__title">
-                    Роман Репилов: «Домашняя трасса для саночника – как любимые шиповки для легкоатлета»
-                  </h3>
-                  <p class="timeline-item__text">
-                    С 13 по 16 февраля на олимпийской санно-бобслейной трассе в Сочи пройдет первый в истории нашей страны чемпионат мира по санному спорту.
-                  </p>
-                </div>
-              </div>
 
-              <div class="timeline-item">
-                <a href="#" class="timeline-item__link">
-                  <picture>
-                    <source type='image/webp' srcset='img/news/img7.webp'>
-                    <img class='timeline-item__image' width='514' height='269' src='img/news/img7.png' alt='фотокарточка'>
-                  </picture>
-                </a>
-                <div class="timeline-item__info">
-                  <div class="timeline-item__top">
-                    <span class="timeline-item__indicator">
-                      СОБЫТИЕ
-                    </span>
-                    <span class="timeline-item__data">
-                      1 MАРТА 2021
-                    </span>
-                  </div>
-                  <h3 class="timeline-item__title">
-                    Роман Репилов: «Домашняя трасса для саночника – как любимые шиповки для легкоатлета»
-                  </h3>
-                  <p class="timeline-item__text">
-                    С 13 по 16 февраля на олимпийской санно-бобслейной трассе в Сочи пройдет первый в истории нашей страны чемпионат мира по санному спорту.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <a href="#" class="timeline-item__link">
-                  <picture>
-                    <source type='image/webp' srcset='img/news/img7.webp'>
-                    <img class='timeline-item__image' width='514' height='269' src='img/news/img7.png' alt='фотокарточка'>
-                  </picture>
-                </a>
-                <div class="timeline-item__info">
-                  <div class="timeline-item__top">
-                    <span class="timeline-item__indicator">
-                      СОБЫТИЕ
-                    </span>
-                    <span class="timeline-item__data">
-                      1 MАРТА 2021
-                    </span>
-                  </div>
-                  <h3 class="timeline-item__title">
-                    Роман Репилов: «Домашняя трасса для саночника – как любимые шиповки для легкоатлета»
-                  </h3>
-                  <p class="timeline-item__text">
-                    С 13 по 16 февраля на олимпийской санно-бобслейной трассе в Сочи пройдет первый в истории нашей страны чемпионат мира по санному спорту.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <a href="#" class="timeline-item__link">
-                  <picture>
-                    <source type='image/webp' srcset='img/news/img7.webp'>
-                    <img class='timeline-item__image' width='514' height='269' src='img/news/img7.png' alt='фотокарточка'>
-                  </picture>
-                </a>
-                <div class="timeline-item__info">
-                  <div class="timeline-item__top">
-                    <span class="timeline-item__indicator">
-                      СОБЫТИЕ
-                    </span>
-                    <span class="timeline-item__data">
-                      1 MАРТА 2021
-                    </span>
-                  </div>
-                  <h3 class="timeline-item__title">
-                    Роман Репилов: «Домашняя трасса для саночника – как любимые шиповки для легкоатлета»
-                  </h3>
-                  <p class="timeline-item__text">
-                    С 13 по 16 февраля на олимпийской санно-бобслейной трассе в Сочи пройдет первый в истории нашей страны чемпионат мира по санному спорту.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <a href="#" class="timeline-item__link">
-                  <picture>
-                    <source type='image/webp' srcset='img/news/img7.webp'>
-                    <img class='timeline-item__image' width='514' height='269' src='img/news/img7.png' alt='фотокарточка'>
-                  </picture>
-                </a>
-                <div class="timeline-item__info">
-                  <div class="timeline-item__top">
-                    <span class="timeline-item__indicator">
-                      СОБЫТИЕ
-                    </span>
-                    <span class="timeline-item__data">
-                      1 MАРТА 2021
-                    </span>
-                  </div>
-                  <h3 class="timeline-item__title">
-                    Роман Репилов: «Домашняя трасса для саночника – как любимые шиповки для легкоатлета»
-                  </h3>
-                  <p class="timeline-item__text">
-                    С 13 по 16 февраля на олимпийской санно-бобслейной трассе в Сочи пройдет первый в истории нашей страны чемпионат мира по санному спорту.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <a href="#" class="timeline-item__link">
-                  <picture>
-                    <source type='image/webp' srcset='img/news/img7.webp'>
-                    <img class='timeline-item__image' width='514' height='269' src='img/news/img7.png' alt='фотокарточка'>
-                  </picture>
-                </a>
-                <div class="timeline-item__info">
-                  <div class="timeline-item__top">
-                    <span class="timeline-item__indicator">
-                      СОБЫТИЕ
-                    </span>
-                    <span class="timeline-item__data">
-                      1 MАРТА 2021
-                    </span>
-                  </div>
-                  <h3 class="timeline-item__title">
-                    Роман Репилов: «Домашняя трасса для саночника – как любимые шиповки для легкоатлета»
-                  </h3>
-                  <p class="timeline-item__text">
-                    С 13 по 16 февраля на олимпийской санно-бобслейной трассе в Сочи пройдет первый в истории нашей страны чемпионат мира по санному спорту.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <a href="#" class="timeline-item__link">
-                  <picture>
-                    <source type='image/webp' srcset='img/news/img7.webp'>
-                    <img class='timeline-item__image' width='514' height='269' src='img/news/img7.png' alt='фотокарточка'>
-                  </picture>
-                </a>
-                <div class="timeline-item__info">
-                  <div class="timeline-item__top">
-                    <span class="timeline-item__indicator">
-                      СОБЫТИЕ
-                    </span>
-                    <span class="timeline-item__data">
-                      1 MАРТА 2021
-                    </span>
-                  </div>
-                  <h3 class="timeline-item__title">
-                    Роман Репилов: «Домашняя трасса для саночника – как любимые шиповки для легкоатлета»
-                  </h3>
-                  <p class="timeline-item__text">
-                    С 13 по 16 февраля на олимпийской санно-бобслейной трассе в Сочи пройдет первый в истории нашей страны чемпионат мира по санному спорту.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <a href="#" class="timeline-item__link">
-                  <picture>
-                    <source type='image/webp' srcset='img/news/img7.webp'>
-                    <img class='timeline-item__image' width='514' height='269' src='img/news/img7.png' alt='фотокарточка'>
-                  </picture>
-                </a>
-                <div class="timeline-item__info">
-                  <div class="timeline-item__top">
-                    <span class="timeline-item__indicator">
-                      СОБЫТИЕ
-                    </span>
-                    <span class="timeline-item__data">
-                      1 MАРТА 2021
-                    </span>
-                  </div>
-                  <h3 class="timeline-item__title">
-                    Роман Репилов: «Домашняя трасса для саночника – как любимые шиповки для легкоатлета»
-                  </h3>
-                  <p class="timeline-item__text">
-                    С 13 по 16 февраля на олимпийской санно-бобслейной трассе в Сочи пройдет первый в истории нашей страны чемпионат мира по санному спорту.
-                  </p>
-                </div>
-              </div>
+          <section class="galery-second">
+            <div class="main-top">
+              <h2 class="main-top__title">
+                Все фото
+              </h2>
             </div>
 
-            <div class="all-news">
-              <button class="all-news__btn">
-                Все новости
-              </button>
-            </div>
+            <div class="galery-second__box">
 
+            </div>
           </section>
 
         </div>
@@ -764,10 +571,9 @@
 
 
   <script src="js/jquery-3.5.1.js"></script>
-  <script src="js/thumbnail-slider.js"></script>
-  <script src="js/ninja-slider.js"></script>
   <script src="js/fullscreen.js"></script>
   <script src="js/thumbs.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/common.min.js"></script>
 </body>
 

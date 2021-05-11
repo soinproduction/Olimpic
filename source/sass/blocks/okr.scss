@@ -1,0 +1,81 @@
+
+.okr-box__item {
+  display: flex;
+  padding: 30px 25px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+  max-width: 495px;
+  width: 100%;
+}
+
+.okr-box__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.okr-box__top, .okr-box__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.okr-box__name {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: $color-text--blue;
+}
+
+.second-name {
+  text-transform: uppercase;
+}
+
+.okr-box__link {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  display: flex;
+  align-items: flex-end;
+  color: $color-text;
+  margin-bottom: 10px;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.okr-box__subtitle {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-text;
+  margin-bottom: 5px;
+}
+
+.okr-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px 30px;
+  padding: 25px 20px;
+  background: $bg--main;
+}
+
+.okr-box__inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.okr-third {
+  margin-bottom: 30px;
+
+  .main-top {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}

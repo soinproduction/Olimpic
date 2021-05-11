@@ -375,6 +375,47 @@
   color: $color-text--blue;
 }
 
+.aside-news--okp {
+  padding-bottom: 18px;
+  padding-right: 17px;
+}
+
+.aside-news__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    transition: all .3s;
+  }
+}
+
+.aside-news__link.accordion__active {
+  text-decoration-line: underline;
+  color: $color-text--blue;
+
+  svg {
+    transform: rotate(90deg);
+  }
+}
+
+.acordion-list {
+  padding: 10px;
+}
+
+.acordion-list__link {
+  font-family: $font-family--alt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: $color-text;
+}
+
+.acordion-list__li + .acordion-list__li {
+  margin-top: 5px;
+}
+
 
 
 

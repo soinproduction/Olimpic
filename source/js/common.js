@@ -20,294 +20,95 @@ window.addEventListener('resize', () => {
 
 // -----------------  Слайдера --------------------
 
-// const Sliders = {
-//   INFORM: {
-//     ELEMENT: $('.inform-slider'),
-//     SETTINGS: {
-//       slidesToShow: 2,
-//       slidesToScroll: 1,
-//       prevArrow: '<div class="novelty-slider-left novelty-slider__button"><img src="img/slider-left.svg" alt="Слайд"></div>',
-//       nextArrow: '<div class="novelty-slider-right novelty-slider__button"><img src="img/slider-right.svg" alt="Слайд"></div>',
-//       dotsClass: "baner-slider__dots",
-//       responsive: [{
-//           breakpoint: 1150,
-//           settings: {
-//             slidesToShow: 2,
-//             slidesToScroll: 2,
-//             infinite: true,
-//           },
-//         },
-//         {
-//           breakpoint: 767,
-//           settings: {
-//             slidesToShow: 2,
-//             slidesToScroll: 2,
-//             infinite: true,
-//           },
-//         },
-//       ],
-//     },
-//     BREAKPOINT: 768,
-//     CLASSNAME: 'inform-slider--flex',
-//   },
-//   NAVBAR: {
-//     ELEMENT: $('.navbar-slider'),
-//     SETTINGS: {
-//       variableWidth: true,
-//       dots: true,
-//       speed: 500,
-//       dotsClass: "baner-slider__dots",
-//       responsive: [{
-//         breakpoint: 1150,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 575,
-//         settings: {
-//           arrows: false,
-//           dots:true,
-//         },
-//       },
-//     ],
-//     },
-//     BREAKPOINT: 768,
-//     CLASSNAME: 'navbar-slider--flex',
-//   },
-//   FIRST_SLIDER: {
-//     ELEMENT: $('.baner-slider'),
-//     SETTINGS: {
-//       accessibility: true,
-//       arrows: false,
-//       dots: true,
-//       speed: 1500,
-//       dotsClass: "baner-slider__dots",
-//       slidesToShow: 1,
-//     },
-//     // BREAKPOINT: OFF_SLIDER,
-//     // CLASSNAME: '',
-//   },
-//   PROD_SLIDER: {
-//     ELEMENT: $('.product-slider'),
-//     SETTINGS: {
-//       accessibility: true,
-//       arrows: false,
-//       dots: false,
-//       speed: 1500,
-//       dotsClass: "baner-slider__dots",
-//       slidesToShow: 1,
-//       infinite: false,
-//       asNavFor: '.product-nav',
-//       swipe: false,
-//     },
-//     // BREAKPOINT: OFF_SLIDER,
-//     CLASSNAME: '',
-//   },
-//   NAV_SLIDER: {
-//     ELEMENT: $('.product-nav'),
-//     SETTINGS: {
-//       accessibility: true,
-//       arrows: true,
-//       dots: false,
-//       speed: 1500,
-//       dotsClass: "baner-slider__dots",
-//       slidesToShow: 4,
-//       slidesToScroll: 1,
-//       infinite: false,
-//       prevArrow: $('.product-nav-arrow-left'),
-//       nextArrow: $('.product-nav-arrow-right'),
-//       asNavFor: '.product-slider',
+const Sliders = {
+  MAIN_SLIDER: {
+    ELEMENT: $('.slider-main'),
+    SETTINGS: {
+      accessibility: true,
+      arrows: false,
+      dots: false,
+      speed: 1500,
+      slidesToShow: 1,
+      infinite: false,
+      // asNavFor: '.galery-nav',
+    },
+    // BREAKPOINT: 1600,
+    // CLASSNAME: '',
+  },
+  NAV_SLIDER: {
+    ELEMENT: $('.galery-nav'),
+    SETTINGS: {
+      accessibility: true,
+      dots: false,
+      speed: 1500,
+      slidesToShow: 3,
+      arrows: false,
+      focusOnSelect: true,
+      adaptiveHeight: true,
+      arrows: false,
+      draggable: false,
+      infinite: false,
+      vertical: true,
+      swipe: false,
+      verticalSwiping: false,
 
-//     },
-//     // BREAKPOINT: OFF_SLIDER,
-//     CLASSNAME: '',
-//   },
-//   BRAND_SLIDER: {
-//     ELEMENT: $('.brand-slider'),
-//     SETTINGS: {
-//       accessibility: true,
-//       arrows: true,
-//       dots: true,
-//       speed: 500,
-//       slidesToShow: 6,
-//       prevArrow: '<div class="novelty-slider-left novelty-slider__button"><img src="img/slider-left.svg" alt="Слайд"></div>',
-//       nextArrow: '<div class="novelty-slider-right novelty-slider__button"><img src="img/slider-right.svg" alt="Слайд"></div>',
-//       dotsClass: "baner-slider__dots",
-//       responsive: [{
-//         breakpoint: 1150,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 575,
-//         settings: {
-//           arrows: false,
-//           dots:true,
-//           slidesToShow: 3,
-//           slidesToScroll: 1,
-//           infinite: true,
-//           variableWidth: true
-//         },
-//       },
-//     ],
-//     },
-//     // BREAKPOINT: OFF_SLIDER,
-//     CLASSNAME: '',
-//   },
-//   HOT_SLIDER: {
-//     ELEMENT: $('.hot-slider'),
-//     SETTINGS: {
-//       accessibility: true,
-//       arrows: true,
-//       dots: true,
-//       speed: 1500,
-//       slidesToShow: 3,
-//       arrows: false,
-//       prevArrow: '<div class="novelty-slider-left novelty-slider__button"><img src="img/slider-left.svg" alt="Слайд"></div>',
-//       nextArrow: '<div class="novelty-slider-right novelty-slider__button"><img src="img/slider-right.svg" alt="Слайд"></div>',
-//       dotsClass: "baner-slider__dots",
-//       responsive: [{
-//         breakpoint: 1150,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 575,
-//         settings: {
-//           arrows: false,
-//           dots:false,
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           rows: 3,
-//           infinite: true,
-//         },
-//       },
-//     ],
-//     },
-//     // BREAKPOINT: OFF_SLIDER,
-//     CLASSNAME: '',
-//   },
-//   LIDERS_SLIDER: {
-//     ELEMENT: $('.liders-slider'),
-//     SETTINGS: {
-//       accessibility: true,
-//       arrows: true,
-//       dots: true,
-//       speed: 1500,
-//       rows: 2,
-//       slidesToShow: 3,
-//       arrows: false,
-//       prevArrow: '<div class="novelty-slider-left novelty-slider__button"><img src="img/slider-left.svg" alt="Слайд"></div>',
-//       nextArrow: '<div class="novelty-slider-right novelty-slider__button"><img src="img/slider-right.svg" alt="Слайд"></div>',
-//       dotsClass: "baner-slider__dots",
-//       responsive: [{
-//         breakpoint: 1150,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 575,
-//         settings: {
-//           arrows: false,
-//           dots:false,
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           rows: 3,
-//           infinite: true,
-//         },
-//       },
-//     ],
-//     },
-//     // BREAKPOINT: OFF_SLIDER,
-//     CLASSNAME: '',
-//   },
-//   NOVELTY_SLIDER: {
-//     ELEMENT: $('.novelty-slider'),
-//     SETTINGS: {
-//       accessibility: true,
-//       arrows: true,
-//       dots: false,
-//       speed: 1500,
-//       slidesToShow: 5,
-//       arrows: true,
-//       prevArrow: '<div class="novelty-slider-left novelty-slider__button"><img src="img/slider-left.svg" alt="Слайд"></div>',
-//       nextArrow: '<div class="novelty-slider-right novelty-slider__button"><img src="img/slider-right.svg" alt="Слайд"></div>',
-//       dotsClass: "baner-slider__dots",
-//       responsive: [{
-//         breakpoint: 1150,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2,
-//           infinite: true,
-//         },
-//       },
-//       {
-//         breakpoint: 575,
-//         settings: {
-//           arrows: false,
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//           rows: 3,
-//           infinite: true,
-//         },
-//       },
-//     ],
-//     },
-//     // BREAKPOINT: OFF_SLIDER,
-//     CLASSNAME: '',
-//   },
-// }
+      asNavFor: '.slider-main',
+      responsive: [{
+        breakpoint: 1150,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 3,
+          infinite: true,
+        },
+      },
+    ],
+    },
+    // BREAKPOINT: 1600,
+    // CLASSNAME: '',
+  },
+}
 
-// function initialazeSlickSlider(slider) {
-//   const {
-//     BREAKPOINT,
-//     SETTINGS,
-//     ELEMENT
-//   } = slider;
-//   (document.documentElement.clientWidth <= BREAKPOINT || BREAKPOINT === undefined) && ELEMENT.slick(SETTINGS);
-// }
+function initialazeSlickSlider(slider) {
+  const {
+    BREAKPOINT,
+    SETTINGS,
+    ELEMENT
+  } = slider;
+  (document.documentElement.clientWidth <= BREAKPOINT || BREAKPOINT === undefined) && ELEMENT.slick(SETTINGS);
+}
 
-// function toggleSlider(slider) {
-//   const {
-//     BREAKPOINT,
-//     ELEMENT,
-//     SETTINGS
-//   } = slider;
-//   document.documentElement.clientWidth > BREAKPOINT && ELEMENT.hasClass('slick-initialized') && ELEMENT.slick('unslick');
-//   document.documentElement.clientWidth <= BREAKPOINT && !ELEMENT.hasClass('slick-initialized') && ELEMENT.slick(SETTINGS);
-// }
+function toggleSlider(slider) {
+  const {
+    BREAKPOINT,
+    ELEMENT,
+    SETTINGS
+  } = slider;
+  document.documentElement.clientWidth > BREAKPOINT && ELEMENT.hasClass('slick-initialized') && ELEMENT.slick('unslick');
+  document.documentElement.clientWidth <= BREAKPOINT && !ELEMENT.hasClass('slick-initialized') && ELEMENT.slick(SETTINGS);
+}
 
-// function toggleExtraClass(slider) {
-//   const {
-//     BREAKPOINT,
-//     ELEMENT,
-//     CLASSNAME
-//   } = slider;
-//   document.documentElement.clientWidth > BREAKPOINT && !ELEMENT.hasClass(CLASSNAME) && ELEMENT.addClass(CLASSNAME);
-//   document.documentElement.clientWidth <= BREAKPOINT && ELEMENT.hasClass(CLASSNAME) && ELEMENT.removeClass(CLASSNAME);
-// }
+function toggleExtraClass(slider) {
+  const {
+    BREAKPOINT,
+    ELEMENT,
+    CLASSNAME
+  } = slider;
+  document.documentElement.clientWidth > BREAKPOINT && !ELEMENT.hasClass(CLASSNAME) && ELEMENT.addClass(CLASSNAME);
+  document.documentElement.clientWidth <= BREAKPOINT && ELEMENT.hasClass(CLASSNAME) && ELEMENT.removeClass(CLASSNAME);
+}
 
-// initialazeSlickSlider(Sliders.INFORM);
-// initialazeSlickSlider(Sliders.NAVBAR);
-// initialazeSlickSlider(Sliders.FIRST_SLIDER);
-// initialazeSlickSlider(Sliders.BRAND_SLIDER);
-// initialazeSlickSlider(Sliders.HOT_SLIDER);
-// initialazeSlickSlider(Sliders.LIDERS_SLIDER);
-// initialazeSlickSlider(Sliders.NOVELTY_SLIDER);
-// initialazeSlickSlider(Sliders.PROD_SLIDER);
-// initialazeSlickSlider(Sliders.NAV_SLIDER);
+initialazeSlickSlider(Sliders.MAIN_SLIDER);
+initialazeSlickSlider(Sliders.NAV_SLIDER);
 
 // window.addEventListener('resize', () => {
 //   toggleSlider(Sliders.INFORM);
@@ -316,10 +117,10 @@ window.addEventListener('resize', () => {
 
 
 // -----------------  Табы  --------------------
-$(".nav-wrapp__item").hover(function (e) {
+$(".nav-wrapp__link").hover(function (e) {
   e.preventDefault();
   $(".news-body-tab").removeClass("news-body-tab--active");
-  $(".nav-wrapp__item").removeClass("tab-active");
+  $(".nav-wrapp__link").removeClass("tab-active");
 
   $($(this).attr("href")).addClass("news-body-tab--active");
   $(this).addClass("tab-active");
@@ -487,6 +288,7 @@ nextSlider.addEventListener('click', (e) => {
 prevSlider.addEventListener('click', (e) => {
     slider.scrollBy(-315, 0);
 });
+
 
 
 

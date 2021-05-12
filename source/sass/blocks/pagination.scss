@@ -1,0 +1,32 @@
+.pagination-list {
+  display: flex;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-list__item + .pagination-list__item {
+  margin-left: 5px;
+}
+
+.pagination-list__link,
+.pagination-list__span {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family--alt;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: $color-text--blue;
+}
+
+.pagination-list__link--active {
+  border-radius: 50%;
+  border: 2px solid $play-border;
+}

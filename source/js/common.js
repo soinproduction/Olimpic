@@ -1,22 +1,29 @@
-const cards = document.querySelectorAll('.card');
+// const cards = document.querySelectorAll('.card');
 
 
-if (document.documentElement.clientWidth < 992 ) {
-    [...cards].map((card) => card.classList.add('card--liders'));
-}
+// if (document.documentElement.clientWidth < 992 ) {
+//     [...cards].map((card) => card.classList.add('card--liders'));
+// }
 
-window.addEventListener('resize', () => {
-  if (document.documentElement.clientWidth < 992) {
-    [...cards].map((card) => {
-      !card.classList.contains('card--liders') && card.classList.add('card--liders');
-    });
-  } else {
-    [...cards].map((card) => {
-      card.classList.contains('card--liders') && card.classList.remove('card--liders');
-    });
+// window.addEventListener('resize', () => {
+//   if (document.documentElement.clientWidth < 992) {
+//     [...cards].map((card) => {
+//       !card.classList.contains('card--liders') && card.classList.add('card--liders');
+//     });
+//   } else {
+//     [...cards].map((card) => {
+//       card.classList.contains('card--liders') && card.classList.remove('card--liders');
+//     });
+//   }
+
+// });
+
+$('[data-fancybox="galery-slider"]').fancybox({
+  thumbs : {
+    autoStart : true
   }
+})
 
-});
 
 // -----------------  Слайдера --------------------
 
@@ -30,7 +37,6 @@ const Sliders = {
       speed: 1500,
       slidesToShow: 1,
       infinite: false,
-      // asNavFor: '.galery-nav',
     },
     // BREAKPOINT: 1600,
     // CLASSNAME: '',
@@ -53,6 +59,60 @@ const Sliders = {
       verticalSwiping: false,
 
       asNavFor: '.slider-main',
+      responsive: [{
+        breakpoint: 1150,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 3,
+          infinite: true,
+        },
+      },
+    ],
+    },
+    // BREAKPOINT: 1600,
+    // CLASSNAME: '',
+  },
+  INDEX_SLIDER: {
+    ELEMENT: $('.index-slider'),
+    SETTINGS: {
+      accessibility: true,
+      arrows: false,
+      dots: false,
+      speed: 1500,
+      slidesToShow: 1,
+      infinite: false,
+    },
+    // BREAKPOINT: 1600,
+    // CLASSNAME: '',
+  },
+  NAV_INDEX: {
+    ELEMENT: $('.index-nav'),
+    SETTINGS: {
+      accessibility: true,
+      dots: false,
+      speed: 1500,
+      slidesToShow: 3,
+      arrows: false,
+      focusOnSelect: true,
+      adaptiveHeight: true,
+      arrows: false,
+      draggable: false,
+      infinite: false,
+      vertical: true,
+      swipe: false,
+      verticalSwiping: false,
+
+      asNavFor: '.index-slider',
       responsive: [{
         breakpoint: 1150,
         settings: {
@@ -109,6 +169,8 @@ function toggleExtraClass(slider) {
 
 initialazeSlickSlider(Sliders.MAIN_SLIDER);
 initialazeSlickSlider(Sliders.NAV_SLIDER);
+initialazeSlickSlider(Sliders.NAV_INDEX);
+initialazeSlickSlider(Sliders.INDEX_SLIDER);
 
 // window.addEventListener('resize', () => {
 //   toggleSlider(Sliders.INFORM);
@@ -217,7 +279,7 @@ for (const accordeon of acc) {
 // --------------
 
 const accordionList = document.getElementsByClassName("accordion--multiple");
-const classNameActive = "accordion--active";
+const classNameActive = "accordion__active";
 
 for (const accordion of accordionList) {
   accordion.addEventListener("click", function () {
@@ -256,6 +318,19 @@ $('body').on('click', '.password-control2', function () {
 });
 
 
+$(".accordion-wrapper__title").click(function () {
+  $(this).toggleClass("accordion-wrapper__title--active"),
+  $(this).siblings('.filter-list').toggleClass("filter-list--active")
+});
+
+
+$(".accordion-wrapper__title").click(function () {
+  $(this).siblings('.filter-list').toggleClass("filter-list--active"),
+  $(".accordion-wrapper__title").toggleClass("accordion-wrapper__title--active"),
+  $('.filter-list').toggleClass("filter-list--active")
+});
+
+
 ! function () {
   var i, u, p, y, m, g, e = document.querySelectorAll(".yt-lazyload");
   0 < e.length && (u = document.createElement("div"), p = document.createElement("div"), y = document.createElement("div"), m = document.createElement("a"), g = document.createElement("iframe"), u.classList.add("yt-lazyload-wrap"), p.classList.add("yt-lazyload-content"), y.classList.add("yt-lazyload-playbtn"), m.classList.add("yt-lazyload-logo"), m.target = "_blank", m.rel = "noreferrer", g.setAttribute("allow", "accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture"), g.setAttribute("allowfullscreen", ""), i = new IntersectionObserver(function (e) {
@@ -288,6 +363,10 @@ nextSlider.addEventListener('click', (e) => {
 prevSlider.addEventListener('click', (e) => {
     slider.scrollBy(-315, 0);
 });
+
+
+
+
 
 
 

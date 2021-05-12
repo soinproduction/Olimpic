@@ -259,12 +259,13 @@ body.compensate-for-scrollbar {
 .fancybox-spaceball {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
-  width: 100%;
-  max-width: none;
-  height: 100%;
-  max-height: none;
+  width: 80%;
+  max-width: 1639px;
+  height: 74%;
+  max-height: 750px;
   margin: 0;
   padding: 0;
 
@@ -856,18 +857,18 @@ body.compensate-for-scrollbar {
 
 .fancybox-thumbs {
   position: absolute;
-  top: 0;
+  // top: 0;
   right: 0;
   bottom: 0;
   z-index: 99995;
 
   display: none;
-  width: 212px;
+  width: 100%;
   margin: 0;
   padding: 2px 2px 4px 2px;
   -webkit-overflow-scrolling: touch;
 
-  background: #dddddd;
+  background: transparent;
 
   -ms-overflow-style: -ms-autohiding-scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -882,9 +883,9 @@ body.compensate-for-scrollbar {
   display: block;
 }
 
-.fancybox-show-thumbs .fancybox-inner {
-  right: 212px;
-}
+// .fancybox-show-thumbs .fancybox-inner {
+//   right: 212px;
+// }
 
 .fancybox-thumbs__list {
   position: absolute;
@@ -896,6 +897,10 @@ body.compensate-for-scrollbar {
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  display: flex;
+  justify-content: center;
+
+
 
   list-style: none;
   font-size: 0;
@@ -925,11 +930,11 @@ body.compensate-for-scrollbar {
   position: relative;
 
   float: left;
-  width: 100px;
+  width: 150px;
   max-width: calc(50% - 4px);
-  height: 75px;
+  height: 120px;
   max-height: calc(100% - 8px);
-  margin: 2px;
+  margin: 5px;
   padding: 0;
   overflow: hidden;
 
@@ -954,7 +959,7 @@ body.compensate-for-scrollbar {
   left: 0;
   z-index: 99991;
 
-  border: 6px solid #ff5268;
+  border: 2px solid #ff5268;
   opacity: 0;
 
   transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);

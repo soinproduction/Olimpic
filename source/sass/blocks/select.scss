@@ -1,9 +1,8 @@
 .select {
   position: relative;
-  width: 160px;
+  width: 150px;
   transition: all .4s;
-  height: 37px;
-  border-bottom: 1px solid #000;
+  height: 30px;
 }
 
 
@@ -25,12 +24,11 @@
 }
 
 .select__current {
-  font-family: Roboto;
+  font-family: $font-family;
   font-style: normal;
   font-weight: bold;
-  font-size: 17px;
-  text-transform: uppercase;
-  color: #000000;
+  font-size: 24px;
+  color: $color-text--blue;
 }
 
 .select__icon {
@@ -42,6 +40,10 @@
   margin-left: auto;
   text-align: center;
   width: 40px;
+
+  svg {
+    fill: $color-text--blue;
+  }
 }
 
 .select__body {
@@ -57,13 +59,11 @@
 }
 
 .select__item {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 17px;
   line-height: 27px;
-  text-transform: uppercase;
-  color: #000000;
+  font-size: 24px;
+  color: $color-text--blue;
   padding: 8px;
   cursor: pointer;
 }

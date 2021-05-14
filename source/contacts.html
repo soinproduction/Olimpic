@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content="default">
+  <title>Новости</title>
+  <script src="js/picturefill.min.js" async="async"></script>
+  <link rel="preload" href="fonts/Exo2.0-ExtraLight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Exo2.0-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Exo2.0-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Exo2.0-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Exo2.0-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Exo2.0-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Exo2.0-Black.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Century-Gothic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Century-Gothic-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="container">
+        <div class="header-top">
+          <a href="#" class="header-top__logo">
+            <svg width="80" height="80">
+              <use href='img/sprite/sprite.svg#logo'></use>
+            </svg>
+          </a>
+          <h1 class="header-top__title">
+            Олимпийский комитет России
+          </h1>
+          <a href="#" class="header-top__logo">
+            <svg width="140" height="80">
+              <use href='img/sprite/sprite.svg#logo2'></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header-bottom">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a href="news.html" class="nav-list__link">
+                  новости
+                </a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">
+                  образование
+                </a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">
+                  О комитете
+                </a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">
+                  Олимпизм
+                </a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">
+                  чистый спорт
+                </a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">
+                  контакты
+                </a>
+              </li>
+
+              <li class="nav-list__item">
+                <a href="#" class="nav-list__link">
+                  еще
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-bottom__left">
+            <div class="header-bottom__wrapper">
+              <ul class="header-bottom__list">
+                <li class="header-bottom__item">
+                  <a href="#" class="header-bottom__social">
+                    <svg width="25" height="25">
+                      <use href='img/sprite/sprite.svg#yt'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="header-bottom__item">
+                  <a href="#" class="header-bottom__social">
+                    <svg width="25" height="25">
+                      <use href='img/sprite/sprite.svg#fb'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="header-bottom__item">
+                  <a href="#" class="header-bottom__social">
+                    <svg width="25" height="25">
+                      <use href='img/sprite/sprite.svg#tw'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="header-bottom__item">
+                  <a href="#" class="header-bottom__social">
+                    <svg width="25" height="25">
+                      <use href='img/sprite/sprite.svg#vk'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="header-bottom__item">
+                  <a href="#" class="header-bottom__social">
+                    <svg width="25" height="25">
+                      <use href='img/sprite/sprite.svg#insta'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="header-bottom__item">
+                  <a href="#" class="header-bottom__social">
+                    <svg width="25" height="25">
+                      <use href='img/sprite/sprite.svg#ok'></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="header-bottom__item">
+                  <a href="#" class="header-bottom__social">
+                    <svg width="25" height="25">
+                      <use href='img/sprite/sprite.svg#yd'></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <form class="header-form" action="#">
+                <input class="header-form__input" type="text" placeholder="Поиск">
+                <button class="header-form__button">
+                  <svg  width='13' height='13'>
+                    <use href='img/sprite/sprite.svg#search'></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+
+            <ul class="lang-list">
+              <li class="lang-list__item">
+                <a href="#" class="lang-list__link lang-list__link--active">
+                  ru
+                </a>
+              </li>
+
+              <li class="lang-list__item">
+                <a href="#" class="lang-list__link">
+                  en
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="coll-wrapp">
+        <div class="coll-wrapp__aside">
+          <aside class="main-aside">
+            <div class="aside-news aside-news--okp">
+              <div class="aside-news__top">
+                <h2 class="aside-news__title">
+                  О комитете
+                </h2>
+              </div>
+
+              <nav class="aside-news__nav">
+                <ul class="aside-news__list">
+                  <li class="aside-news__li">
+                    <span class="aside-news__link accordion">
+                      Устав ОКР
+                      <svg  width='8' height='15'>
+                        <use href='img/sprite/sprite.svg#arrow-list'></use>
+                      </svg>
+                    </span>
+                    <div class="accordion-wrapper panel">
+                      <ul class="acordion-list">
+                        <li class="acordion-list__li">
+                          <a href="#" class="acordion-list__link">
+                            lorem lorem lorem
+                          </a>
+                        </li>
+                        <li class="acordion-list__li">
+                          <a href="#" class="acordion-list__link">
+                            lorem lorem lorem
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </li>
+
+                  <li class="aside-news__li">
+                    <span class="aside-news__link accordion">
+                      Члены ОКР
+                      <svg  width='8' height='15'>
+                        <use href='img/sprite/sprite.svg#arrow-list'></use>
+                      </svg>
+                    </span>
+                    <div class="accordion-wrapper panel">
+                      <ul class="acordion-list">
+                        <li class="acordion-list__li">
+                          <a href="#" class="acordion-list__link">
+                            lorem lorem lorem
+                          </a>
+                        </li>
+                        <li class="acordion-list__li">
+                          <a href="#" class="acordion-list__link">
+                            lorem lorem lorem
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="aside-news__li">
+                    <span class="aside-news__link accordion">
+                      Структура ОКР
+                      <svg  width='8' height='15'>
+                        <use href='img/sprite/sprite.svg#arrow-list'></use>
+                      </svg>
+                    </span>
+                    <div class="accordion-wrapper panel">
+                      <ul class="acordion-list">
+                        <li class="acordion-list__li">
+                          <a href="#" class="acordion-list__link">
+                            lorem lorem lorem
+                          </a>
+                        </li>
+                        <li class="acordion-list__li">
+                          <a href="#" class="acordion-list__link">
+                            lorem lorem lorem
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="aside-news__li">
+                    <a href="#" class="aside-news__link">
+                      Доска почета
+                    </a>
+                  </li>
+
+                  <li class="aside-news__li">
+                    <a href="#" class="aside-news__link">
+                      Отчеты о деятельности
+                    </a>
+                  </li>
+
+                  <li class="aside-news__li">
+                    <span class="aside-news__link accordion">
+                      Официальные документы
+                      <svg  width='8' height='15'>
+                        <use href='img/sprite/sprite.svg#arrow-list'></use>
+                      </svg>
+                    </span>
+                    <div class="accordion-wrapper panel">
+                      <ul class="acordion-list">
+                        <li class="acordion-list__li">
+                          <a href="#" class="acordion-list__link">
+                            Документы ОКР
+                          </a>
+                        </li>
+                        <li class="acordion-list__li">
+                          <a href="#" class="acordion-list__link">
+                            Документы Фейр-Пэйр
+                          </a>
+                        </li>
+                        <li class="acordion-list__li">
+                          <a href="#" class="acordion-list__link">
+                            Документы региональных олимпийских советов
+                          </a>
+                        </li>
+                        <li class="acordion-list__li">
+                          <a href="#" class="acordion-list__link">
+                            Документы спортивного арбитража
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="aside-news__li">
+                    <a href="#" class="aside-news__link">
+                      Журнал “Команда России”
+                    </a>
+                  </li>
+
+                  <li class="aside-news__li">
+                    <a href="#" class="aside-news__link">
+                      Тендеры и конкурсы
+                    </a>
+                  </li>
+
+                  <li class="aside-news__li">
+                    <a href="#" class="aside-news__link">
+                      Соглашение с Минспортом РФ
+                    </a>
+                  </li>
+
+                  <li class="aside-news__li">
+                    <a href="#" class="aside-news__link">
+                      История
+                    </a>
+                  </li>
+
+                  <li class="aside-news__li">
+                    <a href="#" class="aside-news__link">
+                      Конкурс “Энергия побед”
+                    </a>
+                  </li>
+
+                  <li class="aside-news__li">
+                    <span class="aside-news__link accordion--multiple">
+                      Партнеры
+                      <svg  width='8' height='15'>
+                        <use href='img/sprite/sprite.svg#arrow-list'></use>
+                      </svg>
+                    </span>
+                    <div class="accordion-wrapper panel">
+                      <div class="teh-wrapper">
+                        <a href="#" class="acordion-list__link">
+                          Новости партнеров
+                        </a>
+                      </div>
+                      <div class="teh-wrapper">
+                        <h3 class="accordion-wrapper__title accordion-wrapper__title--active">
+                          Маркетинговые партнеры
+                          <svg  width='3' height='6'>
+                            <use href='img/sprite/sprite.svg#arrow-list'></use>
+                          </svg>
+                        </h3>
+                        <div class="filter-list filter-list--active">
+                          <ul class="acordion-list">
+                            <li class="acordion-list__li">
+                              <a href="#" class="acordion-list__link">
+                                Список партнеров
+                              </a>
+                            </li>
+                            <li class="acordion-list__li">
+                              <a href="#" class="acordion-list__link">
+                                Стать парнером
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="teh-wrapper">
+                        <h3 class="accordion-wrapper__title">
+                          Лицензианты
+                          <svg  width='3' height='6'>
+                            <use href='img/sprite/sprite.svg#arrow-list'></use>
+                          </svg>
+                        </h3>
+                        <div class="filter-list">
+                          <ul class="acordion-list">
+                            <li class="acordion-list__li">
+                              <a href="#" class="acordion-list__link">
+                                Список партнеров
+                              </a>
+                            </li>
+                            <li class="acordion-list__li">
+                              <a href="#" class="acordion-list__link">
+                                Стать парнером
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </li>
+
+                  <li class="aside-news__li">
+                    <a href="#" class="aside-news__link aside-news__link--active">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </aside>
+        </div>
+
+        <div class="coll-wrapp__item">
+
+          <section class="contacts-first">
+            <div class="main-top">
+              <h2 class="main-top__title">
+                Контакты
+              </h2>
+            </div>
+
+            <div class="contacts-box">
+              <ul class="contacts-box__list">
+                <li class="contacts-box__item">
+                  <a href="tel:74957254535" class="contacts-box__link">
+                    <svg width="30" height="30">
+                      <use href='img/sprite/sprite.svg#tell'></use>
+                    </svg>
+                    <span>
+                      +7 (495) 725-45-35
+                    </span>
+                  </a>
+                </li>
+
+                <li class="contacts-box__item">
+                  <a href="#" class="contacts-box__link">
+                    <svg width="30" height="30">
+                      <use href='img/sprite/sprite.svg#print'></use>
+                    </svg>
+                    <span>
+                      +7 (495) 725-45-35
+                    </span>
+                  </a>
+                </li>
+
+                <li class="contacts-box__item">
+                  <a href="#" class="contacts-box__link">
+                    <svg width="30" height="30">
+                      <use href='img/sprite/sprite.svg#mail'></use>
+                    </svg>
+                    <span>
+                      info@olympic.ru
+                    </span>
+                  </a>
+                </li>
+
+                <li class="contacts-box__item">
+                  <a href="#" class="contacts-box__link">
+                    <svg width="30" height="30">
+                      <use href='img/sprite/sprite.svg#geo'></use>
+                    </svg>
+                    <span>
+                      Общероссийский союз общественных объединений «Олимпийский комитет России»
+                      119991, г. Москва, Лужнецкая наб., 8
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <div class="contacts-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22614.78062292327!2d37.65360356332675!3d55.78159700296674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sua!4v1620952878831!5m2!1sru!2sua" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+
+          </section>
+
+          <section class="contacts-second">
+            <div class="main-top">
+              <h2 class="main-top__title">
+                Обратная связь
+              </h2>
+            </div>
+
+            <div class="parnters-box parnters-box--contacts">
+              <form action="#" class="main-form">
+                <div class="main-form__label">
+                  <span class="main-form__legend">Ф.И.О</span>
+                  <input class="main-form__input" placeholder="Введите Ваше имя" type="text">
+                </div>
+
+                <div class="main-form__label">
+                  <span class="main-form__legend">E-mail</span>
+                  <input class="main-form__input" placeholder="Введите Вашу электронную почту" type="email">
+                </div>
+
+                <div class="main-form__label">
+                  <span class="main-form__legend">Телефон</span>
+                  <input class="main-form__input" placeholder="Введите Ваш номер телефона" type="tel">
+                </div>
+
+                <div class="main-form__label">
+                  <span class="main-form__legend">Ваше предложение</span>
+                  <textarea class="main-form__form" placeholder="Опишите Ваше предложение о сотрудничестве" name="#" cols="30" rows="10"></textarea>
+                </div>
+                <button class="submit-btn">
+                  Отправить
+                </button>
+              </form>
+            </div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="footer-top">
+          <div class="footer-top__inner footer-left">
+            <a href="#" class="footer-top__link">
+              <svg  width='110' height='92'>
+                <use href='img/sprite/sprite.svg#footer'></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-top__link">
+              <picture>
+                <source type='image/webp' srcset='img/footer2.webp'>
+                <img width='105' height='105' src='img/footer2.png' alt='logo'>
+              </picture>
+            </a>
+            <a href="#" class="footer-top__link">
+              <svg  width='96' height='104'>
+                <use href='img/sprite/sprite.svg#footer3'></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-top__link">
+              <picture>
+                <source type='image/webp' srcset='img/footer4.webp'>
+                <img width='123' height='123' src='img/footer4.png' alt='logo'>
+              </picture>
+            </a>
+          </div>
+
+          <div class="footer-top__inner footer-center">
+            <nav class="footer-center__nav">
+              <ul class="footer-center__list">
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Новости
+                  </a>
+                </li>
+
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    О комитете
+                  </a>
+                </li>
+
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Лозанна-2020
+                  </a>
+                </li>
+
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Олимпизм
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="footer-center__list">
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Образование
+                  </a>
+                </li>
+
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Олимпийская страна
+                  </a>
+                </li>
+
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Чистый спорт
+                  </a>
+                </li>
+
+                <li class="footer-center__li">
+                  <a href="#" class="footer-center__link">
+                    Партнеры
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-top__inner footer-right">
+            <a href="#" class="footer-top__link">
+              <svg  width='110' height='92'>
+                <use href='img/sprite/sprite.svg#logo'></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-top__link">
+              <svg  width='92' height='107'>
+                <use href='img/sprite/sprite.svg#footer5'></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-top__link">
+              <svg  width='70' height='96'>
+                <use href='img/sprite/sprite.svg#footer6'></use>
+              </svg>
+            </a>
+            <a href="#" class="footer-top__link">
+              <svg  width='94' height='90'>
+                <use href='img/sprite/sprite.svg#footer7'></use>
+              </svg>
+            </a>
+          </div>
+
+
+
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom__inner">
+            <h5 class="footer-bottom__title">
+              © Олимпийский комитет России, 2002—2019
+            </h5>
+          </div>
+
+          <div class="footer-bottom__inner">
+            <div class="header-bottom footer-bottom__social">
+                <ul class="header-bottom__list">
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#yt'></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#fb'></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#tw'></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#vk'></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#insta'></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#ok'></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="header-bottom__item">
+                    <a href="#" class="header-bottom__social">
+                      <svg width="25" height="25">
+                        <use href='img/sprite/sprite.svg#yd'></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/fullscreen.js"></script>
+  <script src="js/thumbs.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>

@@ -155,3 +155,151 @@
   text-transform: uppercase;
 }
 
+.play-sec1 {
+  background: $bg--main;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+
+.game-geo__item {
+  width: 240px;
+  min-height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bg--main;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.game-geo__image {
+  width: 100%;
+  display: flex;
+}
+
+.game-geo {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.game-table {
+  padding: 40px 0;
+}
+
+.game-table__box {
+  max-width: 860px;
+  margin: 0 auto;
+  background-color: $bg--main;
+}
+
+.table-top {
+  padding: 29px 34px 29px;
+  background: #F4F4F4;
+}
+
+.table-top__row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.table-top__coll {
+  max-width: 167px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:last-child {
+    max-width: 205px;
+    width: 100%;
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.table-top__name {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+.game-table__image {
+  max-width: 16px;
+  width: 100%;
+}
+
+.game-table__name,
+.game-table__value {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+
+.game-table__coll {
+  max-width: 167px;
+  padding: 17px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-right: 2px solid #F4F4F4;
+
+  &:last-child {
+    max-width: 205px;
+    width: 100%;
+    border: none;
+  }
+
+  &:first-child {
+    max-width: 120px;
+    width: 100%;
+  }
+
+  .game-table__image {
+    margin-right: 23px;
+  }
+}
+
+.game-table__row {
+  display: flex;
+  padding: 0px 20px 0px 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.medals-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 8px 32px 20px;
+  background: #F4F4F4;
+}
+
+.medals-box {
+  max-width: 860px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.medals-body {
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.medals-body__item {
+  padding: 14px 20px;
+  max-width: 250px;
+  width: 100%;
+  min-height: 400px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+}

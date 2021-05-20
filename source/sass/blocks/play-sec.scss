@@ -13,10 +13,18 @@
 }
 
 .play-box__body {
+  position: relative;
+
   display: flex;
   flex-wrap: nowrap;
   width: 1110px;
   margin: 0 auto;
+  padding-bottom: 15px;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
 .play-box__link {
@@ -76,26 +84,16 @@
   margin-bottom: 5px;
 }
 
-.play-box__body {
-  position: relative;
-  padding-bottom: 15px;
 
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-
-
-.play-box__body::-webkit-scrollbar{
-  height: 5px;
+.play-box__body::-webkit-scrollbar {
   display: none;
+  height: 5px;
 }
 
 
 .play-box__body::-webkit-scrollbar-thumb {
   height: 6px;
+
   background: #27aae1;
 }
 
@@ -162,24 +160,25 @@
 
 
 .game-geo__item {
-  width: 240px;
-  min-height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 240px;
+  min-height: 220px;
+
   background: $bg--main;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
 }
 
 .game-geo__image {
-  width: 100%;
   display: flex;
+  width: 100%;
 }
 
 .game-geo {
-  padding: 40px 0;
   display: flex;
   justify-content: space-around;
+  padding: 40px 0;
 }
 
 .game-table {
@@ -189,29 +188,32 @@
 .game-table__box {
   max-width: 860px;
   margin: 0 auto;
+
   background-color: $bg--main;
 }
 
 .table-top {
   padding: 29px 34px 29px;
-  background: #F4F4F4;
+
+  background: #f4f4f4;
 }
 
 .table-top__row {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .table-top__coll {
-  max-width: 167px;
-  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 167px;
+
   &:last-child {
-    max-width: 205px;
     width: 100%;
+    max-width: 205px;
   }
 
   svg {
@@ -220,49 +222,51 @@
 }
 
 .table-top__name {
-  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  text-transform: uppercase;
+  font-family: $font-family;
   color: $color-text;
+  text-transform: uppercase;
 }
 
 .game-table__image {
-  max-width: 16px;
   width: 100%;
+  max-width: 16px;
 }
 
 .game-table__name,
 .game-table__value {
-  font-family: $font-family;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  text-transform: uppercase;
+  font-family: $font-family;
   color: $color-text;
+  text-transform: uppercase;
 }
 
 
 .game-table__coll {
-  max-width: 167px;
-  padding: 17px 0;
   display: flex;
   justify-content: center;
   width: 100%;
-  border-right: 2px solid #F4F4F4;
+  max-width: 167px;
+  padding: 17px 0;
+
+  border-right: 2px solid #f4f4f4;
 
   &:last-child {
-    max-width: 205px;
     width: 100%;
+    max-width: 205px;
+
     border: none;
   }
 
   &:first-child {
-    max-width: 120px;
     width: 100%;
+    max-width: 120px;
   }
 
   .game-table__image {
@@ -272,34 +276,211 @@
 
 .game-table__row {
   display: flex;
-  padding: 0px 20px 0px 0px;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 0;
 }
 
 .medals-top {
   display: flex;
   justify-content: space-between;
   padding: 32px 8px 32px 20px;
-  background: #F4F4F4;
+
+  background: #f4f4f4;
 }
 
 .medals-box {
   max-width: 860px;
-  padding: 40px 0;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
 .medals-body {
-  padding-top: 35px;
   display: flex;
   justify-content: space-between;
+  padding-top: 35px;
 }
 
 .medals-body__item {
-  padding: 14px 20px;
-  max-width: 250px;
+  position: relative;
+
   width: 100%;
+  max-width: 250px;
   min-height: 400px;
+  padding: 14px 20px;
+
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 17px;
+
+    width: 8px;
+    height: 16px;
+
+    background-image: url("data:image/svg+xml,%3Csvg width='7' height='14' viewBox='0 0 7 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.31852 3.0705C6.17989 3.0705 6.04137 3.01736 5.93603 2.91116L4.27545 1.23687C4.1734 1.13401 4.03811 1.07737 3.89442 1.07737C3.75072 1.07737 3.61543 1.13401 3.5134 1.23687L1.8528 2.91116C1.64331 3.12238 1.30227 3.1238 1.09099 2.91428C0.87975 2.70479 0.878349 2.36369 1.08787 2.15248L2.74845 0.47819C3.05431 0.16982 3.46129 0 3.89442 0C4.32754 0 4.73452 0.16982 5.04038 0.47819L6.70096 2.15248C6.91045 2.36369 6.90908 2.70479 6.69784 2.91428C6.59282 3.01846 6.45562 3.0705 6.31852 3.0705ZM5.04038 13.3121L6.70096 11.6378C6.91045 11.4266 6.90908 11.0855 6.69784 10.876C6.48656 10.6665 6.14552 10.6679 5.93603 10.8792L4.27545 12.5534C4.1734 12.6563 4.03811 12.713 3.89442 12.713C3.75072 12.713 3.61543 12.6563 3.5134 12.5534L1.8528 10.8792C1.64331 10.668 1.30227 10.6665 1.09099 10.876C0.87975 11.0855 0.878349 11.4266 1.08787 11.6378L2.74845 13.3121C3.05431 13.6205 3.46129 13.7903 3.89442 13.7903C4.32754 13.7903 4.73452 13.6205 5.04038 13.3121ZM5.75288 6.86823C5.75288 5.82862 4.90709 4.98283 3.86748 4.98283C2.82787 4.98283 1.98209 5.82862 1.98209 6.86823C1.98209 7.90783 2.82787 8.75362 3.86748 8.75362C4.90709 8.75362 5.75288 7.90783 5.75288 6.86823ZM4.67551 6.86823C4.67551 7.31377 4.31303 7.67625 3.86748 7.67625C3.42194 7.67625 3.05945 7.31377 3.05945 6.86823C3.05945 6.42268 3.42194 6.0602 3.86748 6.0602C4.31303 6.0602 4.67551 6.42268 4.67551 6.86823Z' fill='%23231F20'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &:last-child {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.medals-body__li + .medals-body__li {
+  margin-top: 27px;
+}
+
+.medals-body__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: $font-family;
+  color: $color-text;
+
+  &:hover {
+    color: $hover-btn-text;
+
+    text-decoration-line: underline;
+  }
+}
+
+
+.medals-body__list {
+  position: relative;
+
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+
+.medals-body__list::-webkit-scrollbar {
+  display: none;
+}
+
+.medals-prifile__name {
+  padding-left: 9px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: $font-family;
+  color: $color-text;
+}
+
+.medals-prifile {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.medals-prifile__image {
+  width: 100%;
+  max-width: 100px;
+}
+
+.medals-body__title {
+  margin-bottom: 16px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: $font-family;
+  color: $color-text;
+}
+
+
+.medal-list__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.medal-list__item + .medal-list__item {
+  margin-top: 10px;
+}
+
+.medal-list__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: $font-family;
+  color: #f7d145;
+}
+
+.game-geo__name {
+  max-width: 156px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  font-family: $font-family;
+  text-align: center;
+  color: $color-text;
+}
+
+.game-geo__tag {
+  margin-bottom: 4px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: $font-family;
+  color: $color-text;
+}
+
+.game-facts {
+  padding: 40px 0 30px;
+}
+
+.game-facts__list {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.game-facts__item + .game-facts__item {
+  margin-top: 20px;
+}
+
+.game-facts__item {
+  position: relative;
+
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 13px;
+    height: 13px;
+
+    background: $bg--linear;
+    border-radius: 50%;
+    transform: translateY(35%);
+  }
+}
+
+.game-facts__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: $font-family;
+  color: $color-text;
 }

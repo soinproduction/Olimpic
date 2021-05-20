@@ -1,14 +1,16 @@
 .select {
   position: relative;
+
   width: 150px;
-  transition: all .4s;
   height: 30px;
+
+  transition: all 0.4s;
 }
 
 
 .select.is-active .select__body {
-  max-height: 500px;
   height: auto;
+  max-height: 500px;
 }
 
 .select.is-active {
@@ -18,28 +20,30 @@
 }
 
 .select__header {
-  cursor: pointer;
   display: flex;
   align-items: center;
+
+  cursor: pointer;
 }
 
 .select__current {
-  font-family: $font-family;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
+  font-family: $font-family;
   color: $color-text--blue;
 }
 
 .select__icon {
-  align-items: center;
   display: flex;
   flex-shrink: 0;
   justify-content: flex-end;
+  align-items: center;
+  width: 40px;
   height: 40px;
   margin-left: auto;
+
   text-align: center;
-  width: 40px;
 
   svg {
     fill: $color-text--blue;
@@ -47,32 +51,37 @@
 }
 
 .select__body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  z-index: 20;
-  left: 0;
   position: absolute;
-  right: 0;
   top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 20;
+
+  max-height: 0;
   margin-top: 10px;
+  overflow: hidden;
+
+  transition: max-height 0.2s ease-out;
 }
 
 .select__item {
+  padding: 8px;
+
   font-style: normal;
   font-weight: bold;
-  line-height: 27px;
   font-size: 24px;
+  line-height: 27px;
   color: $color-text--blue;
-  padding: 8px;
+
   cursor: pointer;
 }
 
 .select__wrapp {
-  border: 2px solid #000;
-  border-radius: 5px;
-  background-color: #fff;
   width: 100%;
+
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 5px;
 }
 
 .select__item:hover {

@@ -1,0 +1,101 @@
+.biatlon {
+  background: $bg--main;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.biatlon-box__top {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.biatlon-box {
+  padding: 25px 100px 30px 27px;
+}
+
+.biatlon-box__nav + .biatlon-box__nav {
+  margin-left: 74px;
+}
+
+.biatlon-box__nav {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  padding-bottom: 9px;
+  color: $color-text;
+}
+
+.biatlon-box__nav.tab-active {
+  color: $color-text--blue;
+  font-weight: bold;
+  border-bottom: 3px solid $play-border;
+}
+
+.biatlon-tab__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.biatlon-tab__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.biatlon-tab__text {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-text;
+  max-width: 450px;
+  width: 100%;
+}
+
+.biatlon-tab__image {
+  max-width: 380px;
+}
+
+.biatlon-tab__img {
+  display: flex;
+}
+
+.biatlon-tab__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  height: 46px;
+  border: 1px solid rgba(1, 73, 155, 0.5);
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: $color-text--blue;
+}
+
+.biatlon-tab {
+  display: none;
+}
+
+.biatlon-tab.tabs-active {
+  display: block;
+  min-height: 300px;
+}
+
+.intresting-box__text {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-text;
+}
+
+.intresting-box {
+  padding: 30px 100px 55px 27px;
+}
+

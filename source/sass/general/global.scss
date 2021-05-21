@@ -167,3 +167,9 @@ input[type="number"] {
   max-width: 340px;
   width: 100%;
 }
+
+
+section {
+  background: $bg--main;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
+}

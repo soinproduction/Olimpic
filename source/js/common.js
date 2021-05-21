@@ -90,7 +90,8 @@ const Sliders = {
       dots: false,
       speed: 1500,
       slidesToShow: 1,
-      infinite: false,
+      infinite: true,
+      asNavFor: '.index-nav',
     },
     // BREAKPOINT: 1600,
     // CLASSNAME: '',
@@ -104,10 +105,8 @@ const Sliders = {
       slidesToShow: 3,
       arrows: false,
       focusOnSelect: true,
-      adaptiveHeight: true,
-      arrows: false,
       draggable: false,
-      infinite: false,
+      infinite: true,
       vertical: true,
       swipe: false,
       verticalSwiping: false,
@@ -132,6 +131,24 @@ const Sliders = {
         },
       },
     ],
+    },
+    // BREAKPOINT: 1600,
+    // CLASSNAME: '',
+  },
+  DATE_SLIDER: {
+    ELEMENT: $('.calendars-slider'),
+    SETTINGS: {
+      accessibility: true,
+      arrows: true,
+      dots: false,
+      speed: 1000,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      infinite: true,
+      focusOnSelect: true,
+      variableWidth: true,
+      prevArrow: $('.calendars-btn--prev'),
+      nextArrow: $('.calendars-btn--next'),
     },
     // BREAKPOINT: 1600,
     // CLASSNAME: '',
@@ -171,6 +188,7 @@ initialazeSlickSlider(Sliders.MAIN_SLIDER);
 initialazeSlickSlider(Sliders.NAV_SLIDER);
 initialazeSlickSlider(Sliders.NAV_INDEX);
 initialazeSlickSlider(Sliders.INDEX_SLIDER);
+initialazeSlickSlider(Sliders.DATE_SLIDER);
 
 // window.addEventListener('resize', () => {
 //   toggleSlider(Sliders.INFORM);
@@ -185,6 +203,15 @@ $(".nav-wrapp__link").hover(function (e) {
   $(".nav-wrapp__link").removeClass("tab-active");
 
   $($(this).attr("href")).addClass("news-body-tab--active");
+  $(this).addClass("tab-active");
+});
+
+$(".tab").click(function (e) {
+  e.preventDefault();
+  $(".tabs").removeClass("tabs-active");
+  $(".tab").removeClass("tab-active");
+
+  $($(this).attr("href")).addClass("tabs-active");
   $(this).addClass("tab-active");
 });
 

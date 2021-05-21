@@ -49,14 +49,14 @@
 }
 
 .insta-box {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   justify-content: space-between;
   padding-top: 15px;
 
   background-color: $bg--main;
 
-  gap: 15px 0;
+  grid-gap: 15px 0;
 }
 
 .insta-box__title {

@@ -1,8 +1,8 @@
 .select {
   position: relative;
 
-  width: 150px;
-  height: 30px;
+  width: 190px;
+  height: 40px;
 
   transition: all 0.4s;
 }
@@ -10,7 +10,7 @@
 
 .select.is-active .select__body {
   height: auto;
-  max-height: 500px;
+  max-height: 260px;
 }
 
 .select.is-active {
@@ -22,13 +22,13 @@
 .select__header {
   display: flex;
   align-items: center;
-
+  padding: 0 8px 0 32px;
   cursor: pointer;
 }
 
 .select__current {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 24px;
   font-family: $font-family;
   color: $color-text--blue;
@@ -56,34 +56,68 @@
   right: 0;
   left: 0;
   z-index: 20;
-
+  background-color: #01499B;
   max-height: 0;
-  margin-top: 10px;
   overflow: hidden;
-
-  transition: max-height 0.2s ease-out;
 }
 
 .select__item {
-  padding: 8px;
-
+  padding: 10px 0 0;
+  font-family: $font-family;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 24px;
-  line-height: 27px;
-  color: $color-text--blue;
-
+  line-height: 29px;
+  color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
+
+  &:first-child {
+    padding: 0;
+  }
 }
 
 .select__wrapp {
-  width: 100%;
-
-  background-color: #ffffff;
-  border: 2px solid #000000;
-  border-radius: 5px;
+  width: 93.5%;
+  overflow-y: scroll;
+  max-height: 210px;
+  padding: 0 0 0 32px;
+  margin-top: 14px;
+  margin-bottom: 30px;
 }
 
-.select__item:hover {
-  background-color: #f2f2f2;
+// .select__item:hover {
+//   background-color: #f2f2f2;
+// }
+
+.select.is-active {
+  .select__header {
+    background: #01499B;
+  }
+  .select__icon {
+    svg {
+      fill: #fff;
+    }
+  }
+  .select__current {
+    color: #fff;
+  }
+}
+
+
+
+.select__wrapp::-webkit-scrollbar-track {
+  box-sizing: content-box;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #01499B;
+}
+
+.select__wrapp::-webkit-scrollbar{
+  width: 5px;
+}
+
+
+.select__wrapp::-webkit-scrollbar-thumb {
+  width: 6px;
+  background:  #FFFFFF;
+  height: 20%;
 }

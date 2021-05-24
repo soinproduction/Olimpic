@@ -86,6 +86,291 @@
     padding: 16px 13px 18px 13px;
   }
 
+  .nav-wrapp__box {
+    padding: 14px 0;
+  }
+
+  .license-sec {
+    .main-top {
+      display: none;
+    }
+  }
+
+  .news {
+    .main-top {
+      display: none;
+    }
+  }
+
+  .license-box__img {
+    display: flex;
+  }
+
+  .aside-top {
+    height: 38px;
+  }
+
+  .aside-top__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  #first-aside {
+    .aside-top {
+      margin-bottom: 5px;
+    }
+  }
+
+  .first-item,
+  .second-item,
+  .third-item,
+  .frouth-item {
+    width: 48%;
+    height: 46vw;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+
+  .aside-item__title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .first-item__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .aside-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+  }
+
+  .main-baner__link {
+    height: 20vw;
+    min-height: initial;
+    width: 100%;
+    display: flex;
+  }
+
+  .first-item__title {
+    max-width: 150px;
+  }
+
+  .second-item {
+    padding: 21px 0 16px 13px;
+  }
+
+  .second-item__text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .fifth-item__inner:nth-child(1) {
+    svg {
+      width: 138px;
+      height: 66px;
+    }
+  }
+
+  .fifth-item__inner:nth-child(2) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    .fifth-item__title {
+      max-width: 80%;
+      margin-bottom: 10px;
+    }
+
+    svg {
+      width: 150px;
+      height: 42px;
+    }
+  }
+
+  .fifth-item__inner:nth-child(2) svg+svg {
+    margin: 0;
+  }
+
+  .fifth-item {
+    width: 100%;
+    max-height: 400px;
+    padding: 13px 15px 20px;
+  }
+
+  .third-item__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .third-item__text:nth-child(1) {
+    background-size: 60% 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .third-item__text:nth-child(2) {
+    background-size: 75% 100%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  .third-item__text:nth-child(3) {
+    background-size: 90% 100%;
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+
+  .main-top__title {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 130px;
+  }
+
+  .main-top {
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 65px;
+  }
+
+  .tv-box__descr {
+    padding: 3px;
+
+  }
+
+  .tv-box__text {
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90px;
+
+    svg {
+      margin: 0;
+      right: 3px;
+      position: absolute;
+    }
+  }
+
+  .tv-box__link {
+    width: 33%;
+  }
+
+  .button-bottom {
+    padding: 10px 0;
+  }
+
+  .sixth-item {
+    height: 500px;
+    background-size: cover;
+    background-position: initial;
+  }
+
+  .insta-box {
+    grid-template-columns: repeat(3, 32%);
+    grid-gap: 9px 0;
+  }
+
+  .insta-box__item {
+    width: 100%;
+    height: 20vw;
+  }
+
+  .coll-wrapp__aside {
+    display: none;
+  }
+
+  .insta-icon {
+    bottom: 6px;
+    left: 6px;
+    width: 14px;
+    height: 14px;
+
+    svg {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  .insta-box__item--center {
+    padding: 8px 10px;
+  }
+
+  .insta-box__title {
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 200;
+    margin-bottom: 0;
+  }
+
+  .insta-box__text {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 10px;
+    max-width: 72px;
+    flex-grow: initial;
+  }
+
+  .insta-box__link {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 6px;
+  }
+
+  .insta-box__link::before {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-size: cover;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .subscribe-sec__wrapp {
+    padding: 0 20px;
+  }
+
+  .subscribe-sec__title {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .subscribe-form__input {
+    width: 100%;
+  }
+
+  .subscribe-form__input + .subscribe-form__input {
+    margin-top: 40px;
+  }
+
+  .galery-box__inner {
+    flex-direction: column;
+  }
+
+  .index-nav {
+    max-width: 100% !important;
+    width: 100%;
+  }
+
+  .index-nav .slick-list {
+    height: initial !important;
+  }
+
+  .index-nav .slick-active.slick-current {
+    border: none;
+  }
 
 }
 

@@ -6,6 +6,8 @@ var secondReplace = $('#second-replace')[0];
 
 var parentAside = $('#parentAside')[0];
 
+
+
 window.addEventListener('resize', () => {
   if ( $(window).width() < 992 ) {
     firstReplace.insertAdjacentElement("afterbegin", firstAside);
@@ -132,9 +134,10 @@ const Sliders = {
         breakpoint: 575,
         settings: {
           arrows: false,
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
-          rows: 3,
+          rows: 2,
+          vertical:false,
           infinite: true,
         },
       },

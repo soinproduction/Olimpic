@@ -1,0 +1,139 @@
+.map-box {
+  padding-top: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.map-sec {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.map-item__top {
+  max-width: 453px;
+  margin-bottom: 25px;
+}
+
+.map-item {
+  padding-bottom: 25px;
+  position: relative;
+  margin-bottom: 30px;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: $bg--linear;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  &:first-of-type {
+    margin: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+  &:last-of-type {
+    margin: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.map-item__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.map-item__list {
+  width: 50%;
+}
+
+.map-item__li + .map-item__li {
+  margin-top: 20px;
+}
+
+.map-item__link {
+  font-family: $font-family--alt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: $color-text--blue;
+  max-width: 470px;
+
+  svg {
+    margin-left: 10px;
+  }
+}
+
+.map-item__li--disc {
+  padding-left: 25px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    content: "";
+    border-radius: 50%;
+    background: #01499B;
+    left: 0;
+    top: 6px;
+  }
+}
+
+.map-child-list__item {
+  padding-left: 25px;
+  position: relative;
+  margin-top: 10px;
+
+  &::before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    content: "";
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #01499B;
+    left: 0;
+    top: 6px;
+  }
+}
+
+.map-child-list__link {
+  font-family: $font-family--alt;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-text--blue;
+  max-width: 325px;
+}
+
+.map-item__title {
+  margin-bottom: 20px;
+}
+
+
+
+.map-item__list--single {
+  width: 100%;
+
+  .map-child-list {
+    column-count: 2;
+    margin-top: 10px;
+  }
+
+  .map-child-list__item {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,33 @@
+.nav-wrapp__all:hover,
+.submit-btn:hover,
+.all-news__btn:hover,
+.biatlon-tab__btn:hover,
+.button-bottom__btn:hover {
+  font-weight: 600;
+  border: 2px solid #01499B;
+}
+
+.main-top__link:hover {
+  background: transparent !important;
+  color: #fff;
+
+  .main-top__icon {
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.main-subscribe__btn:hover {
+  background: #fff;
+  color: #01499B;
+}
+
+.contacts-box__link:hover {
+  text-decoration-line: underline;
+  color: #01499B;
+}
+
+.aside-bottom__btn:hover {
+  background: #01499B;
+  color: #fff;
+}

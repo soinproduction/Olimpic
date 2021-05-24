@@ -6,6 +6,13 @@
 
 .timeline-sec {
   padding-bottom: 30px;
+  box-shadow: none;
+  background: transparent;
+}
+
+.table-sec {
+  box-shadow: none;
+  background: transparent;
 }
 
 .timeline-item__info {
@@ -50,12 +57,18 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  text-decoration-line: underline;
+  // text-decoration-line: underline;
   text-transform: capitalize;
   color: $color-text--blue;
   min-height: 66px;
   padding-right: 20px;
   margin-bottom: 15px;
+}
+
+.timeline-item:hover {
+  .timeline-item__title {
+    text-decoration: underline;
+  }
 }
 
 .timeline-item__text {
@@ -70,10 +83,10 @@
 }
 
 .timeline-box {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: space-between;
-  gap: 15px 30px;
+  row-gap: 15px;
   margin-bottom: 15px;
 }
 

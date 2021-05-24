@@ -1,22 +1,30 @@
-// const cards = document.querySelectorAll('.card');
+var firstAside = $('#first-aside')[0];
+var secondAside = $('#second-aside')[0];
+
+var firstReplace = $('#first-replace')[0];
+var secondReplace = $('#second-replace')[0];
+
+var parentAside = $('#parentAside')[0];
+
+window.addEventListener('resize', () => {
+  if ( $(window).width() < 992 ) {
+    firstReplace.insertAdjacentElement("afterbegin", firstAside);
+    secondReplace.insertAdjacentElement("afterbegin", secondAside);
+  } else {
+    parentAside.insertAdjacentElement("afterbegin", secondAside);
+    parentAside.insertAdjacentElement("afterbegin", firstAside);
+  }
+
+});
+
+$(function(){
+  if ( $(window).width() < 992 ) {
+    firstReplace.insertAdjacentElement("afterbegin", firstAside);
+    secondReplace.insertAdjacentElement("afterbegin", secondAside);
+  }
+});
 
 
-// if (document.documentElement.clientWidth < 992 ) {
-//     [...cards].map((card) => card.classList.add('card--liders'));
-// }
-
-// window.addEventListener('resize', () => {
-//   if (document.documentElement.clientWidth < 992) {
-//     [...cards].map((card) => {
-//       !card.classList.contains('card--liders') && card.classList.add('card--liders');
-//     });
-//   } else {
-//     [...cards].map((card) => {
-//       card.classList.contains('card--liders') && card.classList.remove('card--liders');
-//     });
-//   }
-
-// });
 
 $('[data-fancybox="galery-slider"]').fancybox({
   thumbs : {
@@ -248,6 +256,13 @@ $(".hamburger").click(function (event) {
     $(".mobile__menu ").toggleClass("mobile__menu__active");
 });
 
+// ------------ Поиск --------------
+
+$(".header-search").click(function () {
+  $(".search-form").toggleClass("search-form--active")
+});
+
+
 // ----------------- Аккордион --------------------
 /**
  * Классы для аккордиона
@@ -362,7 +377,6 @@ nextSlider && nextSlider.addEventListener('click', (e) => {
 prevSlider && prevSlider.addEventListener('click', (e) => {
     slider.scrollBy(-315, 0);
 });
-
 
 
 

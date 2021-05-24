@@ -34,3 +34,58 @@
 }
 
 
+
+@media (min-width: 320px) and (max-width: 575px) {
+  html,
+  body,
+  section {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  .container {
+    max-width: 575px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .news-body {
+    flex-direction: column;
+  }
+
+  .tab-descr__bottom,
+  .tab-descr__date {
+    display: none;
+  }
+
+  .tab-descr__top {
+    margin: 0;
+  }
+
+  .tab-descr__title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .nav-wrapp__link.tab-active,
+  .nav-wrapp__link:hover {
+    background: #E63025;
+  }
+
+  .nav-wrapp__link {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  .nav-wrapp__list {
+    max-width: 100%;
+  }
+
+  .tab-descr {
+    padding: 16px 13px 18px 13px;
+  }
+
+
+}
+

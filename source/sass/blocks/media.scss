@@ -50,14 +50,46 @@
     padding: 0 10px;
   }
 
+  .header-top__title {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    max-width: 190px;
+  }
+
+  .header-top {
+    padding: 24px 0 16px;
+  }
+
   .news-body {
     flex-direction: column;
   }
 
-  .tab-descr__bottom,
-  .tab-descr__date {
-    display: none;
+  .header-top__logo:first-child {
+    svg {
+      width: 60px;
+      height: 60px;
+    }
   }
+
+  .header-top__logo:last-child {
+    svg {
+      width: 88px;
+      height: 50px;
+    }
+  }
+
+  .news {
+    .tab-descr__bottom,
+    .tab-descr__date {
+      display: none;
+    }
+  }
+
+  .header-bottom {
+    position: relative;
+  }
+
 
   .tab-descr__top {
     margin: 0;
@@ -229,7 +261,7 @@
   .main-top__title {
     font-size: 18px;
     line-height: 22px;
-    max-width: 130px;
+    max-width: 160px;
   }
 
   .main-top {
@@ -371,6 +403,128 @@
   .index-nav .slick-active.slick-current {
     border: none;
   }
+
+  .index-slider__slide {
+    .tab-descr {
+      padding: 11px 9px 10px;
+      min-height: 86px;
+    }
+
+    .tab-descr__title {
+      font-size: 14px;
+      line-height: 17px;
+      max-width: 70%;
+    }
+
+    .tab-descr__date {
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
+  .index-slider__slide {
+    height: 273px !important;
+
+    .index-slider__img {
+      height: 100%;
+      // object-fit: contain;
+      // object-position: bottom;
+    }
+  }
+
+  .index-slider {
+    margin-bottom: 10px;
+  }
+
+  .index-nav__slide {
+    height: initial !important;
+    width: initial !important;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .index-nav__wrapper {
+    height: 141px;
+    width: 180px;
+  }
+
+  .index-nav__img, .index-slider__img {
+    height: initial;
+    width: initial;
+  }
+
+  .play-box__item::after,
+  .play-box__date,
+  .play-box__link::before {
+    display: none;
+  }
+
+  .play-box__title {
+    margin-bottom: 0;
+  }
+
+  .play-box__item {
+    padding: 0;
+    // max-width: 50%;
+  }
+
+  .play-box__btn {
+    top: initial;
+  }
+
+  .play-box__body {
+    padding-bottom: 40px;
+    position: relative;
+    max-width: 100%;
+
+    .slick-dots {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 60%;
+      width: 100%;
+      bottom: 0;
+
+      li {
+        height: 2px;
+        width: 16vw;
+        display: block;
+        background-color: #D0D0D0;
+      }
+
+      button {
+        display: none;
+      }
+
+      .slick-active {
+        background-color:  #27AAE1;
+        height: 4px;
+      }
+
+
+
+    }
+  }
+
+  #prev {
+    left: 18px;
+  }
+
+  #next {
+    right: 18px;
+  }
+
+  .play-box__link {
+    margin: 0 auto;
+    max-width: 160px;
+  }
+
+  // .play-box__item {
+  //   max-width: 177px;
+  // }
 
 }
 

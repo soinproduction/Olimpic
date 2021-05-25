@@ -10,8 +10,8 @@ var parentAside = $('#parentAside')[0];
 
 window.addEventListener('resize', () => {
   if ( $(window).width() < 992 ) {
-    firstReplace.insertAdjacentElement("afterbegin", firstAside);
-    secondReplace.insertAdjacentElement("afterbegin", secondAside);
+    firstReplace && firstReplace.insertAdjacentElement("afterbegin", firstAside);
+    secondReplace && secondReplace.insertAdjacentElement("afterbegin", secondAside);
   } else {
     parentAside.insertAdjacentElement("afterbegin", secondAside);
     parentAside.insertAdjacentElement("afterbegin", firstAside);
@@ -21,8 +21,8 @@ window.addEventListener('resize', () => {
 
 $(function(){
   if ( $(window).width() < 992 ) {
-    firstReplace.insertAdjacentElement("afterbegin", firstAside);
-    secondReplace.insertAdjacentElement("afterbegin", secondAside);
+    firstReplace && firstReplace.insertAdjacentElement("afterbegin", firstAside);
+    secondReplace && secondReplace.insertAdjacentElement("afterbegin", secondAside);
   }
 });
 
@@ -136,9 +136,11 @@ const Sliders = {
           arrows: false,
           slidesToShow: 2,
           slidesToScroll: 1,
-          rows: 2,
           vertical:false,
           infinite: true,
+          draggable: true,
+          swipe: true,
+          variableWidth: true,
         },
       },
     ],
@@ -160,6 +162,40 @@ const Sliders = {
       variableWidth: true,
       prevArrow: $('.calendars-btn--prev'),
       nextArrow: $('.calendars-btn--next'),
+    },
+    // BREAKPOINT: 1600,
+    // CLASSNAME: ''
+  },
+  GAME_INDEX: {
+    ELEMENT: $('.play-box__body'),
+    SETTINGS: {
+      accessibility: true,
+      dots: false,
+      speed: 1500,
+      slidesToShow: 4,
+      arrows: false,
+      focusOnSelect: true,
+      infinite: true,
+      prevArrow: $('#prev'),
+      nextArrow: $('#next'),
+      responsive: [{
+        breakpoint: 1150,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          arrows: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots:true,
+        },
+      },
+    ],
     },
     // BREAKPOINT: 1600,
     // CLASSNAME: '',
@@ -198,6 +234,7 @@ function toggleExtraClass(slider) {
 initialazeSlickSlider(Sliders.MAIN_SLIDER);
 initialazeSlickSlider(Sliders.NAV_SLIDER);
 initialazeSlickSlider(Sliders.NAV_INDEX);
+initialazeSlickSlider(Sliders.GAME_INDEX);
 initialazeSlickSlider(Sliders.INDEX_SLIDER);
 initialazeSlickSlider(Sliders.DATE_SLIDER);
 

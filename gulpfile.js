@@ -17,6 +17,7 @@ const include = require("posthtml-include");
 const del = require("del");
 const uglify = require('gulp-uglify-es').default;
 const htmlmin = require("gulp-htmlmin");
+// const purgecss = require('gulp-purgecss')
 
 gulp.task("css", () => {
   return gulp.src("source/sass/style.scss")
@@ -30,7 +31,9 @@ gulp.task("css", () => {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+
 });
+
 
 gulp.task("js", () => {
   return gulp.src("source/js/**/*.js")

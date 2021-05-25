@@ -405,21 +405,6 @@ $(".accordion-wrapper__title").click(function () {
 }();
 
 
-const slider = document.getElementById('playBody');
-const prevSlider = document.getElementById('prev');
-const nextSlider = document.getElementById('next');
-
-
-nextSlider && nextSlider.addEventListener('click', (e) => {
-    slider.scrollBy(315, 0);
-});
-
-prevSlider && prevSlider.addEventListener('click', (e) => {
-    slider.scrollBy(-315, 0);
-});
-
-
-
 
 
 

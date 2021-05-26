@@ -335,7 +335,7 @@
   }
 
   .insta-box__item--center {
-    padding: 8px 10px;
+    padding: 8px;
   }
 
   .insta-box__title {
@@ -349,7 +349,7 @@
     font-weight: 500;
     font-size: 9px;
     line-height: 10px;
-    max-width: 72px;
+    // max-width: 72px;
     flex-grow: initial;
   }
 
@@ -626,6 +626,48 @@
   .footer-center {
     width: 60%;
   }
+
+  .calendar-top {
+    display: none;
+  }
+
+  .calendar-body.tabs {
+    display: none;
+  }
+
+  .calendar-body.tabs-active {
+    display: block;
+  }
+
+  .calendar-box__inner {
+    width: initial;
+  }
+
+  .calendar-body {
+    overflow-y: hidden;
+    height: auto;
+    margin: 0;
+  }
+
+  .calendar-body__item {
+    padding: 0 14px 14px 14px;
+    display: none;
+    margin-bottom: 20px;
+
+    &:nth-child(-n+3) {
+      display: block;
+    }
+
+  }
+
+  .calendar-body__item
+
+  .calendar-body__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+
 
 
 }

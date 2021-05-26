@@ -2,6 +2,46 @@
   padding: 22px 60px 44px;
 }
 
+
+.calendar-nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.calendar-nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  font-family: Century Gothic;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #231F20;
+  height: 47px;
+  position: relative;
+  border-bottom: 4px solid transparent;
+  border-image-source: linear-gradient(180deg, #E63025 0%, #01499B 100%);
+  border-image-slice: 1;
+}
+
+.calendar-nav__link.tab-active {
+  font-weight: bold;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-image-source: linear-gradient(180deg, #E63025 0%, #01499B 100%);
+  border-image-slice: 1;
+}
+
+
+
 .search-filter--calendar {
   max-width: 240px;
   margin-left: 20px;

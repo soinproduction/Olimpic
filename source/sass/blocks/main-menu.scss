@@ -7,6 +7,7 @@
   border-top: 47px solid transparent;
   opacity: 0;
   z-index: -100;
+  display: none;
   transition: .2s;
 }
 
@@ -14,6 +15,7 @@
   .main-menu {
     z-index: 500;
     opacity: 1;
+    display: block;
   }
 }
 

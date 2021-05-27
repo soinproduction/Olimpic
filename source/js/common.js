@@ -6,16 +6,22 @@ var secondReplace = $('#second-replace')[0];
 
 var parentAside = $('#parentAside')[0];
 
-
+var asideBox = $('#asideBox')[0];
 
 window.addEventListener('resize', () => {
   if ( $(window).width() < 992 ) {
     firstReplace && firstReplace.insertAdjacentElement("afterbegin", firstAside);
     secondReplace && secondReplace.insertAdjacentElement("afterbegin", secondAside);
   } else {
-    parentAside.insertAdjacentElement("afterbegin", secondAside);
-    parentAside.insertAdjacentElement("afterbegin", firstAside);
+    parentAside && parentAside.insertAdjacentElement("afterbegin", secondAside);
+    parentAside && parentAside.insertAdjacentElement("afterbegin", firstAside);
   }
+
+  if ( $(window).width() > 767 && $(window).width() < 992 ) {
+     asideBox && asideBox.insertAdjacentElement("beforeend", secondAside);
+  }
+
+
 
 });
 
@@ -23,6 +29,10 @@ $(function(){
   if ( $(window).width() < 992 ) {
     firstReplace && firstReplace.insertAdjacentElement("afterbegin", firstAside);
     secondReplace && secondReplace.insertAdjacentElement("afterbegin", secondAside);
+  }
+
+  if ( $(window).width() > 767 && $(window).width() < 992 ) {
+    asideBox && asideBox.insertAdjacentElement("beforeend", secondAside);
   }
 });
 
@@ -122,12 +132,44 @@ const Sliders = {
       verticalSwiping: false,
 
       asNavFor: '.index-slider',
-      responsive: [{
-        breakpoint: 1150,
+      responsive: [
+      {
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          arrows: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          vertical:false,
           infinite: true,
+          draggable: true,
+          swipe: true,
+          variableWidth: true,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          vertical:false,
+          infinite: true,
+          draggable: true,
+          swipe: true,
+          variableWidth: true,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          vertical:false,
+          infinite: true,
+          draggable: true,
+          swipe: true,
+          variableWidth: true,
         },
       },
       {
@@ -173,17 +215,37 @@ const Sliders = {
       dots: false,
       speed: 1500,
       slidesToShow: 4,
-      arrows: false,
+      arrows: true,
       focusOnSelect: true,
       infinite: true,
       prevArrow: $('#prev'),
       nextArrow: $('#next'),
       responsive: [{
-        breakpoint: 1150,
+        breakpoint: 1200,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          arrows: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
           infinite: true,
+          dots:true,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots:true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots:true,
         },
       },
       {
@@ -291,8 +353,8 @@ if (select.length) {
 
 
 // -----------------  Гамбургер  --------------------
-$(".hamburger").click(function (event) {
-  $(".hamburger").toggleClass("hamburger__active"),
+$(".mobile-more__btn").click(function (event) {
+  $(".mobile-more__btn").toggleClass("mobile-more__btn--active"),
     $(".mobile__menu ").toggleClass("mobile__menu__active");
 });
 

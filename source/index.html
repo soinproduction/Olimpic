@@ -46,6 +46,7 @@
                 <a href="news.html" class="nav-list__link">
                   новости
                 </a>
+
                 <div class="nav-list__menu main-menu">
 
                   <div class="main-menu__wrap">
@@ -689,6 +690,19 @@
         </div>
       </div>
     </div>
+
+    <div class="new-box">
+
+      <div class="new-box__image">
+        <img src="img/new-box.svg" alt="logo" class="new-box__img">
+      </div>
+
+      <a href="#" class="new-box__link">
+        Санкт-Петербург
+      </a>
+
+    </div>
+
   </header>
   <main>
 
@@ -1019,6 +1033,7 @@
         Листай влево
       </span>
     </nav>
+
     <div class="container">
       <div class="coll-wrapp">
         <div class="coll-wrapp__item">
@@ -1037,7 +1052,7 @@
                   </span>
                 </a>
               </div>
-              <div class="news-body">
+              <div class="news-body" data-speed="1000">
                 <div class="news-body__inner">
                   <div class="news-body-tab" id="tab1">
                     <a href="#" class="tabs-link">
@@ -1275,50 +1290,50 @@
                   <div class="nav-wrapp">
                     <ul class="nav-wrapp__list">
                       <li class="nav-wrapp__item">
-                        <a href="#tab1" class="nav-wrapp__link">
+                        <a href="#tab1" data-tab="1" class="nav-wrapp__link">
                           ВЛАДИМИР ФИЛАТОВ: «ИГРА С КАНАДОЙ ПОЛУЧИЛАСЬ. НО МЫ НЕ ОБОЛЬЩАЕМСЯ»
                         </a>
                       </li>
 
                       <li class="nav-wrapp__item">
-                        <a href="#tab2" class="nav-wrapp__link">
+                        <a href="#tab2" data-tab="2" class="nav-wrapp__link">
                           «СЕРЕБРО» В САННОМ СПОРТЕ И ПЕРВАЯ ПОБЕДА РОССИЙСКИХ ХОККЕИСТОВ
                         </a>
                       </li>
 
 
                       <li class="nav-wrapp__item">
-                        <a href="#tab3" class="nav-wrapp__link">
+                        <a href="#tab3" data-tab="3" class="nav-wrapp__link">
                           ЛОЗАННА-2020. ФОТОГАЛЕРЕЯ. ДЕНЬ ДЕВЯТЫЙ
                         </a>
                       </li>
 
                       <li class="nav-wrapp__item">
-                        <a href="#tab4" class="nav-wrapp__link tab-active">
+                        <a href="#tab4" data-tab="4" class="nav-wrapp__link tab-active">
                           ПАВЕЛ РЕПИЛОВ: «СТАРШИЙ БРАТ – ДЛЯ МЕНЯ ПРИМЕР ВО ВСЕМ»
                         </a>
                       </li>
 
                       <li class="nav-wrapp__item">
-                        <a href="#tab5" class="nav-wrapp__link">
+                        <a href="#tab5" data-tab="5" class="nav-wrapp__link">
                           АНДРЕЙ САВЕЛЬЕВ: “РЕЗУЛЬТАТЫ КОНЬКОБЕЖЦЕВ ОЦЕНИВАЮ НА ПЯТЬ”
                         </a>
                       </li>
 
                       <li class="nav-wrapp__item">
-                        <a href="#tab6"  class="nav-wrapp__link">
+                        <a href="#tab6" data-tab="6"  class="nav-wrapp__link">
                           ПАВЕЛ ТАРАН:“ОТ ЭТИХ ИГР У МЕНЯ ОСТАНУТСЯ ОДНИ ИЗ САМЫХ ЯРКИХ ВПЕЧАТЛЕНИЙ В ЖИЗНИ”
                         </a>
                       </li>
 
                       <li class="nav-wrapp__item">
-                        <a href="#tab7" class="nav-wrapp__link">
+                        <a href="#tab7" data-tab="7" class="nav-wrapp__link">
                           АЛЕНА МОХОВА: «ДЕДУШКА СКАЗАЛ, ЧТО У МЕНЯ ХОРОШИЕ ДАННЫЕ ДЛЯ ЦИКЛИЧЕСКИХ ВИДОВ СПОРТА»
                         </a>
                       </li>
 
                       <li class="nav-wrapp__item">
-                        <a href="#tab8" class="nav-wrapp__link">
+                        <a href="#tab8" data-tab="8" class="nav-wrapp__link">
                           Саночники пишут историю
                         </a>
                       </li>
@@ -1333,9 +1348,31 @@
               </div>
             </div>
           </section>
+
+
           <section class="main-baner">
-            <a href="#" class="main-baner__link"></a>
+
+            <div class="main-baner__slider">
+
+              <a href="#" class="main-baner__link">
+                <img src="img/baner1.jpg" alt="слайд">
+              </a>
+
+              <a href="#" class="main-baner__link">
+                <img src="img/baner1.jpg" alt="слайд">
+              </a>
+
+              <a href="#" class="main-baner__link">
+                <img src="img/baner1.jpg" alt="слайд">
+              </a>
+
+            </div>
+
+
           </section>
+
+
+
           <section id="first-replace" class="first-replace"></section>
           <section class="tv-sec">
             <div class="tv-box">
@@ -1582,32 +1619,18 @@
               </a>
             </div>
             <div class="aside-box" id="asideBox">
-              <a href="#" class="aside-item first-item" style='background-image: url("img/aside/bg1.png");'>
-                <h3 class="aside-item__title first-item__title">
-                  ВСЕРОССИЙСКИЙ ОЛИМПИЙСКИЙ ДЕНЬ
-                </h3>
-                <p class="first-item__text">
-                  4 сентября
-                </p>
+              <a href="#" class="aside-item first-item">
+                <img src="img/aside/b1.png" alt="baner">
               </a>
-              <a href="#" class="aside-item second-item" style='background-image: url("img/aside/bg2.png");'>
-                <h3 class="aside-item__title second-item__title">
-                  ВСЕРОССИЙСКИЙ <br>
-                  ДЕНЬ <br>
-                  ХОДЬБЫ
-                </h3>
-                <p class="second-item__text">
-                  24 марта в 19:00
-                </p>
+              <a href="#" class="aside-item second-item">
+                <img src="img/aside/b2.png" alt="baner">
               </a>
-              <a href="#" class="aside-item third-item" style='background-image: url("img/aside/bg3.png");'>
-                <p class="third-item__text">ДЕНЬ</p>
-                <p class="third-item__text">ЗИМНИХ</p>
-                <p class="third-item__text">ВИДОВ СПОРТА</p>
+              <a href="#" class="aside-item third-item">
+                <img src="img/aside/b3.png" alt="baner">
               </a>
 
-              <a href="#" class="aside-item frouth-item" style='background-image: url("img/aside/bg4.png");'>
-
+              <a href="#" class="aside-item frouth-item">
+                <img src="img/aside/b4.png" alt="baner">
               </a>
 
               <a href="#" class="aside-item fifth-item" style="background-color: #ffffff;">
@@ -3255,6 +3278,7 @@
 
 
   <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/fullscreen.js"></script>
   <script src="js/thumbs.js"></script>

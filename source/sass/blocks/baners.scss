@@ -2,10 +2,14 @@
   width: 100%;
   display: flex;
   min-height: 220px;
-  background-image: url(../img/baner1.jpg);
   background-size: cover;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   background-repeat: no-repeat;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .main-baner {

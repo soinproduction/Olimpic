@@ -1,13 +1,12 @@
-.aside-news--galery {
-  min-height: 643px;
-}
+// .aside-news--galery {
+//   min-height: 643px;
+// }
 
 .search-filter {
   position: relative;
-  margin-bottom: 20px;
 }
 
-.search-filter__input {
+.search-filter__input , .sf-field-search input {
   height: 38px;
   position: relative;
   border: 2px solid $play-border;
@@ -27,6 +26,25 @@
   }
 }
 
+.sf-field-search label {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M8.80758 0C3.95121 0 0 3.95121 0 8.80758C0 13.6642 3.95121 17.6152 8.80758 17.6152C13.6642 17.6152 17.6152 13.6642 17.6152 8.80758C17.6152 3.95121 13.6642 0 8.80758 0ZM8.80758 15.9892C4.84769 15.9892 1.62602 12.7675 1.62602 8.80762C1.62602 4.84773 4.84769 1.62602 8.80758 1.62602C12.7675 1.62602 15.9891 4.84769 15.9891 8.80758C15.9891 12.7675 12.7675 15.9892 8.80758 15.9892Z' fill='%2301499B'/%3E%3Cpath d='M19.762 18.6121L15.1007 13.9509C14.7831 13.6332 14.2687 13.6332 13.9511 13.9509C13.6335 14.2682 13.6335 14.7831 13.9511 15.1005L18.6124 19.7617C18.7711 19.9205 18.979 19.9999 19.1872 19.9999C19.395 19.9999 19.6031 19.9205 19.762 19.7617C20.0796 19.4444 20.0796 18.9295 19.762 18.6121Z' fill='%2301499B'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    z-index: 1;
+  }
+}
+
 .search-filter__btn {
   position: absolute;
   display: flex;
@@ -40,7 +58,7 @@
   padding: 0;
 }
 
-.calendar-filter__legend {
+.calendar-filter__legend, .sf-date-prefix {
   font-family: $font-family;
   font-style: normal;
   font-weight: 500;
@@ -49,11 +67,21 @@
   margin-bottom: 5px;
 }
 
+.searchandfilter label {
+  width: 100%;
+}
+
+.searchandfilter .sf_date_field li {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
 .calendar-filter__fild + .calendar-filter__fild {
   margin-top: 20px;
 }
 
-.calendar-filter__input {
+.calendar-filter__input, .sf_date_field li input {
   height: 20px;
   border: none;
   padding-bottom: 5px;
@@ -96,6 +124,47 @@
   }
 }
 
+.sf-field-submit input {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family--alt;
+  font-style: normal;
+  font-size: 12px;
+  color: $color-text--blue;
+  padding: 0;
+  border: 2px solid $play-border;
+  font-weight: bold;
+  background-color: transparent;
+
+  &:hover {
+    color: $color-text--rev;
+    background: $bg--hover-item;
+  }
+}
+
+.search-filter-reset {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family--alt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: $color-text--blue;
+  padding: 0;
+}
+
+.sf-field-reset {
+  padding: 0 !important;
+}
+
+
+
 .galery-box__title {
   padding-left: 24px;
   margin-bottom: 12px;
@@ -108,6 +177,9 @@
 
 .galery-sliders {
   display: flex;
+  max-height: 542px;
+  overflow-y: hidden;
+
   justify-content: space-between;
 
   .slick-list {
@@ -117,14 +189,28 @@
 
 .galery-main__image, .slider-main__slide {
   display: flex !important;
+  width: 100%;
 }
+
+.slider-main__slide {
+  a {
+    width: 100%;
+   }
+
+   img {
+     width: 100%;
+   }
+}
+
 
 .slider-main {
   max-width: 876px;
+  height: 100%;
 }
 
 .galery-nav {
   max-width: 170px;
+  height: 100%;
 
   .slick-list {
     height: 100%;
@@ -147,6 +233,12 @@
     .galery-second__link {
       text-decoration: underline;
     }
+  }
+
+  img {
+    max-height: 340px;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -206,6 +298,32 @@
   padding-bottom: 80px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
 }
+
+
+.document-box .searchandfilter ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .sf-field-submit{
+    margin: 0 20px;
+    input {
+      min-width: 192px;
+    }
+  }
+
+  .sf-field-reset {
+    margin: 0 20px;
+  }
+}
+
+.document-box .searchandfilter .sf-field-post_date {
+  li {
+    margin: 0 20px;
+  }
+}
+
+
 
 
 

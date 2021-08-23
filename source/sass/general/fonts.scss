@@ -4,7 +4,7 @@
   font-family: "exo2";
 
   font-display: swap;
-  src: url("../fonts/Exo2.0-ExtraLight.woff2") format("woff2"), url("../fonts/Exo2.0-ExtraLight.woff") format("woff"), url("../fonts/Exo2.0-ExtraLight.otf") format("otf");
+  src: url("../fonts/Exo2.0-ExtraLight.woff2") format("woff2"), url("../fonts/Exo2.0-ExtraLight.woff") format("woff"), url("../fonts/Exo2.0-ExtraLight.otf") format("otf"), url("../fonts/Exo2.0-ExtraLight.ttf") format("truetype");
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-family: "exo2";
 
   font-display: swap;
-  src: url("../fonts/Exo2.0-Light.woff2") format("woff2"), url("../fonts/Exo2.0-Light.woff") format("woff"), url("../fonts/Exo2.0-Light.otf") format("otf");
+  src: url("../fonts/Exo2.0-Light.woff2") format("woff2"), url("../fonts/Exo2.0-Light.woff") format("woff"), url("../fonts/Exo2.0-Light.otf") format("otf"), url("../fonts/Exo2.0-Light.ttf") format("truetype");
 }
 
 
@@ -23,7 +23,7 @@
   font-family: "exo2";
 
   font-display: swap;
-  src: url("../fonts/Exo2.0-Regular.woff2") format("woff2"), url("../fonts/Exo2.0-Regular.woff") format("woff"), url("../fonts/Exo2.0-Regular.otf") format("otf");
+  src: url("../fonts/Exo2.0-Regular.woff2") format("woff2"), url("../fonts/Exo2.0-Regular.woff") format("woff"), url("../fonts/Exo2.0-Regular.otf") format("otf"), url("../fonts/Exo2.0-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -32,7 +32,7 @@
   font-family: "exo2";
 
   font-display: swap;
-  src: url("../fonts/Exo2.0-Medium.woff2") format("woff2"), url("../fonts/Exo2.0-Medium.woff") format("woff"), url("../fonts/Exo2.0-Medium.otf") format("otf");
+  src: url("../fonts/Exo2.0-Medium.woff2") format("woff2"), url("../fonts/Exo2.0-Medium.woff") format("woff"), url("../fonts/Exo2.0-Medium.otf") format("otf"), url("../fonts/Exo2.0-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -41,7 +41,7 @@
   font-family: "exo2";
 
   font-display: swap;
-  src: url("../fonts/Exo2.0-SemiBold.woff2") format("woff2"), url("../fonts/Exo2.0-SemiBold.woff") format("woff"), url("../fonts/Exo2.0-SemiBold.otf") format("otf");
+  src: url("../fonts/Exo2.0-SemiBold.woff2") format("woff2"), url("../fonts/Exo2.0-SemiBold.woff") format("woff"), url("../fonts/Exo2.0-SemiBold.otf") format("otf"), url("../fonts/Exo2.0-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
@@ -50,7 +50,7 @@
   font-family: "exo2";
 
   font-display: swap;
-  src: url("../fonts/Exo2.0-Bold.woff2") format("woff2"), url("../fonts/Exo2.0-Bold.woff") format("woff"), url("../fonts/Exo2.0-Bold.otf") format("otf");
+  src: url("../fonts/Exo2.0-Bold.woff2") format("woff2"), url("../fonts/Exo2.0-Bold.woff") format("woff"), url("../fonts/Exo2.0-Bold.otf") format("otf"), url("../fonts/Exo2.0-Bold.ttf") format("truetype");
 }
 
 
@@ -60,7 +60,7 @@
   font-family: "exo2";
 
   font-display: swap;
-  src: url("../fonts/Exo2.0-ExtraBold.woff2") format("woff2"), url("../fonts/Exo2.0-ExtraBold.woff") format("woff"), url("../fonts/Exo2.0-ExtraBold.otf") format("otf");
+  src: url("../fonts/Exo2.0-ExtraBold.woff2") format("woff2"), url("../fonts/Exo2.0-ExtraBold.woff") format("woff"), url("../fonts/Exo2.0-ExtraBold.otf") format("otf"), url("../fonts/Exo2.0-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
@@ -69,7 +69,10 @@
   font-family: "exo2";
 
   font-display: swap;
-  src: url("../fonts/Exo2.0-Black.woff2") format("woff2"), url("../fonts/Exo2.0-Black.woff") format("woff"), url("../fonts/Exo2.0-Black.otf") format("otf");
+  src: url("../fonts/Exo2.0-Black.woff2") format("woff2"),
+    url("../fonts/Exo2.0-Black.woff") format("woff"),
+    url("../fonts/Exo2.0-Black.otf") format("otf"),
+    url("../fonts/Exo2.0-Black.ttf") format("truetype");
 }
 
 

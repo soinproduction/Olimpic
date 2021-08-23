@@ -9,9 +9,9 @@
   background: $bg--main;
 }
 
-.document-top__search {
-  max-width: 240px;
-}
+// .document-top__search {
+//   max-width: 240px;
+// }
 
 .document-select {
   display: flex;
@@ -73,5 +73,34 @@
     color: $color-text--blue;
     text-decoration: underline;
   }
+}
+
+.document-coll {
+
+  p {
+    margin: 0;
+  }
+
+  &:nth-child(1) {
+    width: 5%;
+  }
+
+  &:nth-child(2) {
+    width: 50%;
+  }
+
+  &:nth-child(3) {
+    width: 15%;
+    text-align: center;
+  }
+
+  &:nth-child(4) {
+    width: 15%;
+    text-align: center;
+  }
+}
+
+.document-body .alm-btn-wrap {
+  margin-top: 15px;
 }
 

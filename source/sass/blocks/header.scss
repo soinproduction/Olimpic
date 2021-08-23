@@ -34,8 +34,12 @@ header {
   align-items: center;
 }
 
-.nav-list__item + .nav-list__item {
+.nav-list > li:not(:first-of-type) {
   margin-left: 35px;
+}
+
+.header-top__logo:last-of-type img{
+  max-width: 160px;
 }
 
 .nav-list__item {
@@ -79,7 +83,7 @@ header {
   margin-left: 25px;
 }
 
-.lang-list__link {
+.lang-list li {
   font-family: $font-family;
   font-style: normal;
   font-weight: normal;
@@ -88,12 +92,13 @@ header {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.lang-list__link--active {
+.lang-list__link--active,
+li.current-lang a {
   color: #FFFFFF;
   text-decoration: underline;
 }
 
-.lang-list__item + .lang-list__item {
+.lang-list li:not(:first-of-type) {
   margin-top: 5px;
 }
 

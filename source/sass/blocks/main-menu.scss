@@ -1,31 +1,114 @@
 
-.main-menu {
+.main-menu,
+.nav-list .sub-menu {
   position: absolute;
-  left: 0;
+  top: 68px;
   right: 0;
-  width: 100vw;
-  border-top: 47px solid transparent;
-  opacity: 0;
+  left: 0;
   z-index: -100;
+
   display: none;
-  transition: .2s;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100vw;
+  max-height: 475px;
+  margin-top: 0;
+  padding-top: 0;
+
+  background-color: #344050;
+  opacity: 0;
+
+  transition: 0.2s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 0;
+    left: 0;
+
+    height: 50px;
+
+    background-color: transparent;
+  }
 }
+
+
+.nav-list .sub-menu > li:hover a {
+  color: #344050;
+
+  background-color: #f4f4f4;
+}
+
+.nav-list > li:hover > a {
+  text-decoration: underline;
+}
+
+.nav-list > li {
+  position: relative;
+}
+
+.nav-list > li.menu-item-has-children:hover {
+  .sub-menu {
+    z-index: 500;
+
+    display: flex;
+
+    opacity: 1;
+  }
+}
+
+.nav-list > li a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: $font-family;
+  color: $color-text--rev;
+  text-transform: uppercase;
+}
+
+.nav-list .sub-menu li a {
+  display: flex;
+  align-items: center;
+  width: 370px;
+  min-height: 75px;
+  padding: 0 10px;
+  white-space: normal;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: $font-family;
+  color: $color-text--rev;
+  text-transform: uppercase;
+}
+
+.nav-list > li.current-menu-item > a {
+  text-decoration: underline;
+}
+
+.sub-menu > li.current-menu-item a {
+  text-decoration: none;
+}
+
 
 .nav-list__item:hover {
   .main-menu {
     z-index: 500;
-    opacity: 1;
+
     display: block;
+
+    opacity: 1;
   }
 }
 
 .main-menu__list {
-  max-height: 475px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #344050;
   align-content: flex-start;
+  max-height: 475px;
+
+  background-color: #344050;
 }
 
 .main-menu__wrap {
@@ -38,20 +121,22 @@
 }
 
 .main-menu__link {
+  display: flex;
+  align-items: center;
   width: 370px;
   min-height: 75px;
-  display: flex;
   padding: 0 10px;
-  align-items: center;
-  font-family: $font-family;
+
   font-size: 18px;
   line-height: 22px;
-  text-transform: uppercase;
+  font-family: $font-family;
   color: $color-text--rev;
+  text-transform: uppercase;
 
   &:hover {
-    background-color: #F4F4F4;
     color: #344050;
+
+    background-color: #f4f4f4;
   }
 }
 
@@ -59,4 +144,10 @@ body {
   overflow-x: hidden;
 }
 
+#menu-verhnee-menyu-2 .sub-menu {
+  display:none;
+}
 
+#menu-verhnee-menyu-1 .sub-menu {
+  display: none;
+}

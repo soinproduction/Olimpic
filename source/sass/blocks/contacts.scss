@@ -16,7 +16,7 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.35);
 }
 
-.contacts-box__link {
+.contacts-box ul a {
   font-family: $font-family;
   font-style: normal;
   font-weight: 600;
@@ -39,7 +39,7 @@
   }
 }
 
-.contacts-box__item {
+.contacts-box ul li {
   width: 30%;
   margin-bottom: 15px;
 
@@ -48,7 +48,7 @@
   }
 }
 
-.contacts-box__list {
+.contacts-box ul {
   margin: 0 auto;
   max-width: 860px;
   display: flex;
@@ -66,6 +66,15 @@
     width: 100%;
     min-height: 590px;
   }
+}
+
+.contacts-box--tabs ul {
+  max-width: 100%;
+  padding: 0 27px 56px;
+}
+
+.contacts-box--tabs {
+  padding-top: 0;
 }
 
 

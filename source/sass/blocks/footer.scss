@@ -16,7 +16,7 @@ footer {
   display: flex;
   max-width: 280px;
   flex-wrap: wrap;
-  gap: 30px;
+  grid-gap: 30px;
   justify-content: space-between;
 }
 
@@ -43,7 +43,7 @@ footer {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  color: $color-text--rev;
+  color: $color-text--rev !important;
 }
 
 .footer-center__li + .footer-center__li {

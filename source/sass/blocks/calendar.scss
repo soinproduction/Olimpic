@@ -43,7 +43,7 @@
 
 
 .search-filter--calendar {
-  max-width: 240px;
+  max-width: 245px;
   margin-left: 20px;
   margin-bottom: 0;
 }
@@ -286,3 +286,27 @@
     width: 7px;
   }
 }
+
+.calendars-body__coll:nth-child(1) {
+  max-width: 136px;
+}
+
+.calendars-body__coll:nth-child(2) {
+  width: 17%;
+  text-align: center;
+}
+
+.calendars-body__coll:nth-child(3) {
+  width: 30%;
+}
+
+.calendars-body__coll:nth-child(4) {
+  width: 15%;
+  text-align: center;
+}
+
+.calendars-body__coll:nth-child(5) {
+  width: 15%;
+  text-align: center;
+}
+

@@ -156,8 +156,9 @@
   .kinds-box__inner {
     padding-right: 28px;
 
-    gap: 50px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
   }
 
   .kinds-box__link {
@@ -177,7 +178,7 @@
   .kinds-box__inner {
     padding-right: 28px;
 
-    gap: 50px;
+    grid-gap: 50px;
     grid-template-columns: 1fr 1fr;
   }
 

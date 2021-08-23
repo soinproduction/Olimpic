@@ -60,7 +60,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 25px 30px;
+  grid-gap: 25px 30px;
   padding: 25px 20px;
   background: $bg--main;
 }
@@ -69,6 +69,15 @@
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.okr-box__image {
+  max-width: 150px;
+  max-height: 150px;
+  width: 100%;
+  img {
+    width: 100%;
+  }
 }
 
 .okr-third {

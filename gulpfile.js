@@ -106,13 +106,13 @@ gulp.task("html", () => {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    // .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 
 gulp.task("copy", () => {
   return gulp.src([
-      "source/fonts/**/*.{woff,woff2}",
+      "source/fonts/**/*.{woff,woff2,ttf,otf}",
       "source/img/**/*.{png,jpg,jpeg,svg,gif}",
       "source/*.ico"
     ], {

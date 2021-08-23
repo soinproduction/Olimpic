@@ -16,7 +16,7 @@
     "gulp-uglify-es": "2.0.0",
     "gulp-webp": "4.0.1",
     "node-sass": "5.0.0",
-    "postcss": "8.2.9",
+    "postcss": "^8.3.0",
     "posthtml-include": "1.7.0",
     "stylelint-config-htmlacademy": "0.1.4"
   },

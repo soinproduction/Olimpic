@@ -15,6 +15,12 @@
   &:hover svg {
     transform: scale(1.1);
   }
+
+  img {
+    width: 116px;
+    height: 116px;
+    object-fit: cover;
+  }
 }
 
 .kinds-box__name {
@@ -23,6 +29,7 @@
   font-weight: 500;
   font-size: 18px;
   color: $color-text;
+  text-align: center;
 }
 
 .kinds-box {
@@ -55,9 +62,25 @@
   }
 }
 
-.kinds-box__item {
-  width: fit-content;
+.kinds-box--first {
+  .kinds-box__item {
+    width: 120px;
+  }
 }
+
+
+.kinds-box--second {
+  .kinds-box__item {
+    width: 120px;
+  }
+}
+
+
+.kinds-box__item {
+  width: 136px;
+  height: 160px;
+}
+
 
 
 .kinds-box__inner {
